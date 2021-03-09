@@ -2,9 +2,10 @@
 .lumen_intro{
 
     width: 100%;
-    border: solid red 1px;
+    /* border: solid red 1px; */
     display: flex;
     flex-direction: row;
+    padding: 5% 0%;
 
 }
 
@@ -15,7 +16,7 @@
 
 .inner_first{
 
-    border: solid yellow 1px;
+    /* border: solid yellow 1px; */
     width: 50%;
     margin-left: 10%;
     
@@ -23,7 +24,7 @@
 
 .inner_second{
 
-    border: solid green 1px;
+    /* border: solid green 1px; */
     width: 50%;
     margin-right: 10%;
     margin-top: 2%;
@@ -71,12 +72,12 @@
 }
 
 .font_size2{
-    font-size: 2.5vh;
+    font-size: 3vh;
 }
 
 
 .font_size3{
-    font-size: 2vh;
+    font-size: 2.5vh;
 }
 
 
@@ -86,7 +87,7 @@
     height: 8vh;
     width: 20vh;
     border-radius: 50px;
-    background-color: mediumblue;
+    background-color: rgb(70, 70, 228);
     color: white;
     font-size: 2vh;
     
@@ -97,28 +98,63 @@
 
 .intro_img{
 
+    /* min-width: 80%; */
+
     width: 80%;
     height: auto;
-    border: solid pink;
+    /* border: solid pink; */
     padding: auto auto;
+    /* margin-top: 2%; */
 
 }
 
 .other_img{
 
-    width: 80%;
+    width: 85%;
     margin-left: 20%;
     height: auto;
-    border: solid pink;
+    /* border: solid pink; */
     padding: auto auto;  
+    margin-top: 20%;
 
+    
+
+}
+
+
+.user_img{
+    width: 60px;
+    height: auto;
+    border-radius: 50px;
+    margin-top: 30%;
+}
+
+.loc_img{
+    width: 30%;
+    height: auto;
+    margin-top: 0px
+}
+
+
+.logos{
+    width: 60%;
+    height: auto;
+    padding: 20%;
+}
+
+
+.user_flex{
+    display: flex;
+    flex-direction: row;
+    /* border: solid red; */
+    gap: 2%;
 }
 
 .linkings{
 
     margin-right: 2%;
     font-size: 2.5vh;
-    color: mediumblue;
+    color: rgb(70, 70, 228);
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
@@ -138,3 +174,198 @@
 
 
 
+.icon_logo{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: rgb(70, 70, 228);
+    margin-left: 20%;
+}
+
+@media only screen and (max-width: 1200px){
+
+    .other_img{
+
+        width: 85%;
+        margin-left: 20%;
+        height: auto;
+        padding: auto auto;  
+        margin-top: 50%;
+    
+    }
+
+
+    .intro_img{
+    
+        width: 85%;
+        height: auto;
+        margin-left: 20%;
+
+        padding: auto auto;
+
+        margin-top: 10%;
+    
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 992px){
+
+    .other_img{
+
+        width: 95%;
+        margin-left: 1%;
+        height: auto;
+        padding: auto auto;  
+        margin-top: 70%;
+    
+    }
+
+
+    .intro_img{
+
+        /* min-width: 80%; */
+    
+        width: 95%;
+        height: auto;
+        margin-left: 5%;
+        /* border: solid pink; */
+        padding: auto auto;
+        /* margin-top: 2%; */
+        margin-top: 50%;
+    
+    }
+
+    
+
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+
+
+    .lumen_intro{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0% 0%;
+    
+    }
+
+    .inner_first{
+        width: 100%;
+    }
+
+    .inner_second{
+        width: 100%;
+    }
+
+
+    .inner_first{
+
+        margin: auto;
+    }
+
+    .intro_img{
+
+        /* min-width: 80%; */
+    
+        width: 85%;
+        height: auto;
+        margin-left: 10%;
+        /* border: solid pink; */
+        padding: auto auto;
+        /* margin-top: 2%; */
+        margin-top: 1%;
+    
+    }
+
+
+    .other_img{
+
+        width: 85%;
+        margin-left: 10%;
+        height: auto;
+        padding: auto auto;  
+        margin-top: 1%;
+    
+    
+    }
+
+    .reverse_col{
+        flex-direction: column-reverse;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .lumen_intro{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0% 0%;
+    
+    }
+
+    .inner_first{
+        width: 100%;
+    }
+
+    .inner_second{
+        width: 100%;
+    }
+
+
+    .inner_first{
+
+        /* margin-left: 0%; */
+        margin: auto;
+        
+    }
+
+
+    .intro_img{
+
+        /* min-width: 80%; */
+    
+        width: 85%;
+        height: auto;
+        margin-left: 5%;
+        /* border: solid pink; */
+        padding: auto auto;
+        /* margin-top: 2%; */
+        margin-top: 1%;
+    
+    }
+
+    .other_img{
+
+        width: 85%;
+        margin-left: 5%;
+        height: auto;
+        padding: auto auto;  
+        margin-top: 1%;
+    
+        
+    
+    }
+
+    .reverse_col{
+        flex-direction: column-reverse;
+    }
+
+
+}
