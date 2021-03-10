@@ -38,3 +38,8 @@ function lightbox_close() {
 // }
 
 document.querySelector("")
+
+function redirectMeToSignUp()
+{
+    location.assign("signup.html")
+}
