@@ -1,9 +1,8 @@
-
-
 <!-- ********This file is created by Team Bhagirathi with the guidance of Masai School***** -->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,14 +12,20 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
 
 
 
 
     <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="navbar_footer.css">
+    <link rel="stylesheet" href="light_box.css">
+
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/    jquery.min.js"></script> -->
 
 
 </head>
@@ -28,18 +33,61 @@
 
 <body>
 
-    
+
+
+
+    <div class="MenuBarToggle">
+        <a href="index.html">
+            <img class="SvgLogo" src="Images/Lumen_logo.png"></a>
+        <label id="Menulabel" for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <div class="menuBar">
+            <a href="#">Create</a>
+            <a href="#">Pricing</a>
+            <a href="#">Enterprise</a>
+            <a href="FAQ.html">Case studies</a>
+            <a href="blog.html">Learn</a>
+            <a href="login.html"><button id="LogInButton" class="pointer1">Login</button></a>
+            <a href="signUP.html"><span><button id="SignButton" class="pointer1">Sign up</button></span></a>
+
+        </div>
+    </div>
+
+
+
+
+
+
     <div class="lumen_intro background_gray">
 
         <div class="inner_first">
             <h3 class="heading">The easiest video maker for social media marketing</h3>
-            <p class="description">Lumen5 creates impactful, engaging videos from your existing content — so you can make video a regular part of your marketing strategy.</p>
-            <button id="sign_up_button">Sign up free</button>
+            <p class="description">Lumen5 creates impactful, engaging videos from your existing content — so you can
+                make video a regular part of your marketing strategy.</p>
+            <button id="sign_up_button" class="pointer1">Sign up free</button>
         </div>
 
-        <div class="inner_second">
-            <img src="Images/lumen_intro.png" alt="Lumen Intro" class="intro_img">
+        <div class="inner_second" id="lumen_intro_img">
+            <img src="Images/lumen_intro.png" onclick="lightbox_open()" alt="Lumen Intro" class="intro_img pointer">
+
         </div>
+
+
+        <div id="light">
+            <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+            <video id="VisaChipCardVideo" width="600" style="border-radius: 10px;" controls>
+                <source src="Videos/video1.mp4" type="video/mp4">
+                <!--Browser does not support <video> tag -->
+            </video>
+        </div>
+
+        <div id="fade" onClick="lightbox_close();"></div>
+
+
+
+        <!-- <div>
+            <a href="#" onclick="lightbox_open();">Watch video</a>
+        </div> -->
 
     </div>
 
@@ -48,7 +96,7 @@
 
         <div class="inner_first">
 
-            <img src="Images/lumen_intro2.png" alt="Lumen Intro" class="other_img">  
+            <img src="Images/lumen_intro2.png" alt="Lumen Intro" class="other_img">
 
         </div>
 
@@ -59,15 +107,18 @@
             </div>
 
             <h3 class="heading">Turn content into video —effortlessly</h3>
-            <p class="description font_size2">Starting from a blank page is hard. With Lumen5, you don’t have to. Our AI-powered technology helps you storyboard your ideas, fit your content to a layout, and find music and visuals that enhance your message.</p>
+            <p class="description font_size2">Starting from a blank page is hard. With Lumen5, you don’t have to. Our
+                AI-powered technology helps you storyboard your ideas, fit your content to a layout, and find music and
+                visuals that enhance your message.</p>
 
             <div class="description">
-                <a href="" class="linkings">Get started for free</a>
+                <a href="" class="linkings pointer2">Get started for free</a>
             </div>
 
             <hr class="partition">
 
-            <p class="description font_size3">“Lumen5 has enabled us to create more videos and drive more traffic, while having more time to invest in other projects.”</p>
+            <p class="description font_size3">“Lumen5 has enabled us to create more videos and drive more traffic, while
+                having more time to invest in other projects.”</p>
 
             <div class="description user_flex">
                 <div>
@@ -79,7 +130,7 @@
                     <img src="Images/uni1.png" alt="Location" class="loc_img">
                 </div>
             </div>
-            
+
         </div>
 
     </div>
@@ -94,15 +145,18 @@
             </div>
 
             <h3 class="heading">Integrate high-quality media in minutes</h3>
-            <p class="description font_size2">The Lumen5 media library gives you easy access to millions of photos, video clips, and audio files, so you always have the elements you need to create the perfect video.</p>
+            <p class="description font_size2">The Lumen5 media library gives you easy access to millions of photos,
+                video clips, and audio files, so you always have the elements you need to create the perfect video.</p>
 
             <div class="description">
-                <a href="" class="linkings">View plans</a>
+                <a href="" class="linkings pointer2">View plans</a>
             </div>
 
             <hr class="partition">
 
-            <p class="description font_size3">“We promoted our downloadable study on top PPC skills for 2019 on social media using a short video created in Lumen5 in just 30 minutes, and decreased cost per download by 5x!”</p>
+            <p class="description font_size3">“We promoted our downloadable study on top PPC skills for 2019 on social
+                media using a short video created in Lumen5 in just 30 minutes, and decreased cost per download by 5x!”
+            </p>
 
             <div class="description user_flex">
                 <div>
@@ -114,15 +168,10 @@
                     <img src="Images/uni2.png" alt="Location" class="loc_img">
                 </div>
             </div>
-             
-
         </div>
 
         <div class="inner_second">
-
-            
-            <img src="Images/lumen_intro3.png" alt="Lumen Intro" class="other_img"> 
-            
+            <img src="Images/lumen_intro3.png" alt="Lumen Intro" class="other_img">
         </div>
 
     </div>
@@ -133,7 +182,7 @@
 
         <div class="inner_first">
 
-            <img src="Images/lumen_intro4.png" alt="Lumen Intro" class="other_img">  
+            <img src="Images/lumen_intro4.png" alt="Lumen Intro" class="other_img">
 
         </div>
 
@@ -145,15 +194,18 @@
             </div>
 
             <h3 class="heading">Customize with voiceovers and branding</h3>
-            <p class="description font_size2">Want to add your own creative flair to every video? With Lumen5’s brand presets and voiceover feature, you can record your own voice and choose from hundreds of themes, colors, fonts, and more.</p>
+            <p class="description font_size2">Want to add your own creative flair to every video? With Lumen5’s brand
+                presets and voiceover feature, you can record your own voice and choose from hundreds of themes, colors,
+                fonts, and more.</p>
 
             <div class="description">
-                <a href="" class="linkings">Get started for free</a>
+                <a href="" class="linkings pointer2">Get started for free</a>
             </div>
 
             <hr class="partition">
 
-            <p class="description font_size3">“Whenever I got in touch with Lumen5 I felt like my suggestions mattered and I was being listened to. It’s like I’m co-creating in a tiny way. It’s a great feeling.”</p>
+            <p class="description font_size3">“Whenever I got in touch with Lumen5 I felt like my suggestions mattered
+                and I was being listened to. It’s like I’m co-creating in a tiny way. It’s a great feeling.”</p>
 
             <div class="description user_flex">
                 <div>
@@ -165,12 +217,199 @@
                     <img src="Images/uni3.png" alt="Location" class="loc_img">
                 </div>
             </div>
-            
+
         </div>
 
     </div>
 
 
+
+
+    <div id="footer">
+        <div id="footer-list">
+            <div id="desktime">
+                <nav>
+                    <ul>
+                        <li>Desktime</li>
+                        <li>Terms</li>
+                        <li>Privacy</li>
+                        <li>Cookies</li>
+                        <li>Affiliate Terms</li>
+                        <li>Download app</li>
+                        <li>Pricing</li>
+                        <li>Affiliate</li>
+                        <li>Press</li>
+                        <li>Desktime in your language</li>
+                    </ul>
+                    <select>
+                        <option value="" selected="selected">Desktime</option>
+                        <option value="#Terms">Terms</option>
+                        <option value="#Privacy">Privacy</option>
+                        <option value="#Cookies">Cookies</option>
+                        <option value="#Affiliate Terms">Affiliate Terms</option>
+                        <option value="#Download app">Download app</option>
+                        <option value="#Pricing">Pricing</option>
+                        <option value="#Affiliate">Affiliate</option>
+                        <option value="#Press">Press</option>
+                        <option value="#Desktime in your language">Desktime in your language</option>
+                    </select>
+                </nav>
+            </div>
+            <div id="Learn-more">
+                <nav>
+                    <ul>
+                        <li>Learn More</li>
+                        <li>Employee Time Tracking</li>
+                        <li>Online employee time clock</li>
+                        <li>Best time tracking apps</li>
+                        <li>Desktime for business</li>
+                        <li>Desktime for Freelancers</li>
+                        <li>FAQ</li>
+                        <li>Case studies</li>
+                        <li>Webinar</li>
+                        <li>Blog</li>
+                    </ul>
+                    <select>
+                        <option value="" selected="selected">Learn More</option>
+                        <option value="#Employee Time Tracking">Employee Time Tracking</option>
+                        <option value="#Online employee time clock">Online employee time clock</option>
+                        <option value="#Best time tracking apps">Best time tracking apps</option>
+                        <option value="#Desktime for business">Desktime for business</option>
+                        <option value="#Desktime for Freelancers">Desktime for Freelancers</option>
+                        <option value="#FAQ">FAQ</option>
+                        <option value="#Case studies">Case studies</option>
+                        <option value="#Webinar">Webinar</option>
+                        <option value="#Blog">Blog</option>
+                    </select>
+                </nav>
+            </div>
+            <div id="Integrations">
+                <nav>
+                    <ul>
+                        <li>Integrations</li>
+                        <li>Trello</li>
+                        <li>Basecamp</li>
+                        <li>Jira</li>
+                        <li>Asana</li>
+                        <li>Outlook Calender</li>
+                        <li>Google Calender</li>
+                    </ul>
+                    <select>
+                        <option value="" selected="selected">Integrations</option>
+                        <option value="#Trello">Trello</option>
+                        <option value="#Basecamp">Basecamp</option>
+                        <option value="#Jira">Jira</option>
+                        <option value="#Asana">Asana</option>
+                        <option value="#Outlook Calender">Outlook Calender</option>
+                        <option value="#Google Calende">Google Calende</option>
+                    </select>
+                </nav>
+            </div>
+            <div id="features">
+                <nav>
+                    <ul>
+                        <li>Features</li>
+                        <li>Automatic time tracking</li>
+                        <li>URL & app tracking</li>
+                        <li>Screenshots</li>
+                        <li>Project time tracking</li>
+                        <li>Shift Scheduling</li>
+                        <li>Offline time tracking</li>
+                        <li>Invoicing</li>
+                        <li>Absence Calender</li>
+                        <li>Mobile app</li>
+                        <li>Feature requests</li>
+                    </ul>
+                    <select>
+                        <option value="" selected="selected">Features</option>
+                        <option value="#Automatic time tracking">Automatic time tracking</option>
+                        <option value="URL & app tracking">URL & app tracking</option>
+                        <option value="Screenshots">Screenshots</option>
+                        <option value="#Project time tracking">Project time tracking</option>
+                        <option value="#Shift Scheduling">Shift Scheduling</option>
+                        <option value="#Offline time tracking">Offline time tracking</option>
+                        <option value="#Invoicing">Invoicing</option>
+                        <option value="#Absence Calender">Absence Calender</option>
+                        <option value="#Mobile app">Mobile app</option>
+                    </select>
+                </nav>
+            </div>
+            <div id="Contacts">
+                <nav>
+                    <ul>
+                        <li>Contacts</li>
+                        <li>Schedule a demo</li>
+                        <li>Schedule a support call</li>
+                        <li>Send us an e-mail</li>
+                        <li>Request In-person training</li>
+                        <li>Open chat</li>
+                    </ul>
+                    <select>
+                        <option value="" selected="selected">Contacts</option>
+                        <option value="#Schedule a demo">Schedule a demo</option>
+                        <option value="#Schedule a support call">Schedule a support call</option>
+                        <option value="Send us an e-mail">Send us an e-mail</option>
+                        <option value="#Request In-person training">Request In-person training</option>
+                        <option value="#Open chat">Open chat</option>
+                    </select>
+                </nav>
+            </div>
+        </div>
+        <div id="copy">
+            <div id="d-logo">
+                <a href="index.html">
+                    <img src="https://desktime.com/assets/img/logo/default.svg" alt="desktime logo" /></a>
+            </div>
+            <div id="copy-blank"></div>
+            <div id="fb-l">
+                <a href="https://www.facebook.com/DeskTime/">
+                    <img src="https://www.pngitem.com/pimgs/m/519-5190929_facebook-icon-svg-grey-hd-png-download.png"
+                        alt="facebook logo"></a>
+            </div>
+            <div id="twitter-l">
+                <a href="https://twitter.com/desktimecom">
+                    <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcrFrlMCUjVhWmMEIItJR39_qpKt72GnxQow&usqp=CAU"
+                        alt="twitter logo"></a>
+            </div>
+            <div id="youtube-l">
+                <a href="https://www.youtube.com/channel/UCHMGr8kbfSU2Ler6iBM4b1g">
+                    <img src="https://www.seekpng.com/png/detail/22-223106_boulder-bits-youtube-logo-grey-png.png"
+                        alt="youtube logo"></a>
+            </div>
+            <div id="linkedin-l">
+                <a href="https://www.linkedin.com/company/desktime-com/">
+                    <img src="https://simg.nicepng.com/png/small/374-3745383_linkedin-linkedin-logo-grey-png.png"
+                        alt="linkedin logo"></a>
+            </div>
+            <div id="google-play">
+                <a href="https://play.google.com/store/apps/details?id=desktime.main">
+                    <img src="https://freeiconshop.com/wp-content/uploads/edd/google-play-badge-128x128.png"
+                        alt="google play"></a>
+            </div>
+            <div id="app-store">
+                <a href="https://apps.apple.com/us/app/desktime-for-iphone/id452994124">
+                    <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-example-preferred_2x.png"
+                        alt="apple store"></a>
+            </div>
+        </div>
+        <div id="copy-2">
+            <div id="copyright">
+                <p>© 2011 - 2021 DeskTime. All rights reserved.</p>
+            </div>
+            <div id="copyr-blank"></div>
+            <div id="dra-group">
+                <a href="https://draugiemgroup.com/"></a>
+                <img src="https://desktime.com/assets/img/draugiem-group.svg" alt="draugium group" />
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+
 </body>
+
+
 
 </html>
