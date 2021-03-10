@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
     <title>pricing Tag</title>
 </head>
 <style>
@@ -54,12 +61,12 @@
     }
 
     .pricingPremium {
-        border: 1px solid;
+        
         /* color: #75787c; */
         /* padding: 3vh; */
         height: 45vh;
         width: 232px;
-        border: 1px solid grey;
+        border: 1px solid #DDDEE6;
         border-radius: 14px;
         padding: 22px;
         margin: 22px;
@@ -95,9 +102,9 @@
         background-color: #5846f6;
         color: white;
         width: 175px;
-        font-weight: bold;
-        font-size: 19px;
+        font-size: 16px;
         margin: -12px;
+        text-align: center;
     }
 
     .pricingCheckSymbol {
@@ -110,7 +117,7 @@
     }
 
     #priceBusiness {
-        margin: 320px 20px;
+        margin: 220px 20px;
         /* border: 1px solid red; */
         padding: 12px;
         color: #24282f;
@@ -134,10 +141,11 @@
         color: #5846f6;
         outline: none;
     }
+
     .priceBusinessPlus>input:hover {
         background: dodgerblue;
     }
-    
+
 
     span+input {
         background: blue;
@@ -156,16 +164,61 @@
         font-size: 15px;
     }
 
-    /* input[type="button"] {
-    width: 120px;
-    height: 60px;
-    margin-left: 35px;
-    display: block;
-    background-color: gray;
-    color: white;
-    border: none;
-    outline: none;
-} */
+    #pricingMembers {
+        background-color: #f5f5f5;
+        display: flex;
+        flex: 1;
+        /* width:100%; */
+    }
+
+    .pricingImages>img {
+        position: relative;
+        width: 14vh;
+        margin-left: 20px;
+        margin-top: -21px;
+        /* padding: 0 12vh; */
+        border: 1px solid white;
+        outline: none;
+        border-radius: 70px;
+    }
+
+    .pricingMememberComment {
+        border: 1px solid white;
+        outline: none;
+        padding: 0 1%;
+        margin: 2% 10vh;
+        background-color: white;
+        width: 125vh;
+        text-align: center;
+        color: #24282f;
+
+    }
+
+    strong {
+        color: #24282f;
+        font-weight: bold;
+    }
+    .savepermonth{
+        color: blue;
+        font-size: 19px;
+    }
+
+    #pricingFrequently{
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        margin: 142px;
+        color:#24282f;
+    }
+    #pricingFrequently > div > h1{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    #pricingFrequently > div > p{
+        font-size: 19px;
+        margin-bottom: 19px;
+    }
     /* @media screen  and (min-width: 768PX) {
         #pricingContainers{
             background: white;
@@ -190,7 +243,7 @@
         <div id="pricingBill">
             <input type="button" id="pricemontly" value="Bill monthly" />
             <input type="button" id="priceYearly" value="Bill yearly" />
-            
+
         </div>
         <!--  price descrip 1 -->
         <div id="pricingPrecommon">
@@ -200,11 +253,11 @@
                     <p>for casual video individual <br>enthautic</p>
                 </div>
                 <div class="pricingPremiumpadding">
-                    <h1>$<span id="priceValue20"> 0  </span>usd</h1>
+                    <h1>$<span id="priceValue20"> 0 </span>usd</h1>
                     <p>forever free</p>
                     <p class="saveSomepercent"></p>
                     <p class="savepermonth"></p>
-                    
+
                 </div>
                 <div class="pricingPremiumpadding">
                     <input type="button" value="Try it free" />
@@ -232,7 +285,7 @@
                     <p>For individual content <br>creators</p>
                 </div>
                 <div class="pricingPremiumpadding">
-                    <h1>$<span id="priceValue11">11  </span>usd</h1>
+                    <h1>$<span id="priceValue11">11 </span>usd</h1>
                     <p class="savepermonth">per month</p>
                     <p class="saveSomepercent"></p>
                 </div>
@@ -259,7 +312,7 @@
                     <p>For professional video <br>storytellers</p>
                 </div>
                 <div class="pricingPremiumpadding">
-                    <h1>$<span id="priceValue89">89  </span>usd</h1>
+                    <h1>$<span id="priceValue89">89 </span>usd</h1>
                     <p class="savepermonth">per month</p>
                     <p class="saveSomepercent"></p>
                 </div>
@@ -297,7 +350,7 @@
                     <p>For brands focused on reach and growth</p>
                 </div>
                 <div class="pricingPremiumpadding">
-                    <h1>$<span id="priceValue199">199  </span>usd</h1>
+                    <h1>$<span id="priceValue199">199 </span>usd</h1>
                     <p class="savepermonth">per month</p>
                     <p class="saveSomepercent"></p>
                 </div>
@@ -331,11 +384,12 @@
             <div class="pricingPremium">
                 <div class="pricingPremiumpadding">
                     <h1>Enterprise</h1>
-                    <p>For large-scale video  of videos<br>teams</p>
+                    <p>For large-scale video of videos<br>teams</p>
                 </div>
                 <div class="pricingPremiumpadding">
-                    <h1><span>$ </span>custom</h1><p></p>
-                    <br/><br/>
+                    <h1><span>$ </span>custom</h1>
+                    <p></p>
+                    <br /><br />
                     <!-- <p>free video</p> -->
                 </div>
                 <div class="pricingPremiumpadding">
@@ -371,11 +425,111 @@
                 <input type="button" value="compare plans" />
                 <span>or </span>
                 <input type="button" value="try it free" />
-
             </div>
         </div>
+
+        <!-- pricingMembers -->
+        <div id="pricingMembers">
+            <!-- 1 comment member -->
+            <div class="pricingMememberComment">
+                <div class="pricingImages">
+                    <img src="./images/comment-darren.png">
+                </div>
+                <div>
+                    <p> "A member from our ProBlogger group created a video using Lumen5 and published it on
+                        Facebook.
+                        In 24 hours the video got <strong>300,000 views </strong>, just using this little tool." </p>
+                    <p> DARREN ROWSE </p>
+                </div>
+            </div>
+            <!-- 2 comment member -->
+            <div class="pricingMememberComment">
+                <div class="pricingImages">
+                    <img src="./images/comment-nicholas.png">
+                </div>
+                <div>
+                    <p> "By using Lumen5, we increased our Facebook engagements by 448%, and boosted our reach
+                        dramatically.
+                        Our page grew from 5,000 to <strong>23,000 likes</strong> within a week!"</p>
+                    <p> NICHOLAS YANG </p>
+                </div>
+            </div>
+            <!-- 3 comment   -->
+            <div class="pricingMememberComment">
+                <div class="pricingImages">
+                    <img src="./images/comment-tova.png">
+                </div>
+                <div>
+                    <p> "My first video already got over <strong>650,000 views</strong> on my facebook page.
+                        It is an amazing program and I’m really impressed! It made converting a blog post into a video
+                        so easy. </p>
+                    <p> TOVA LEIGH </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- 1 pricingMembers end -->
+
+        <div id="pricingMembers">
+
+            <!-- 1 comment member -->
+            <div class="pricingMememberComment">
+                <div class="pricingImages">
+                    <img src="./images/comment-lauren.png">
+                </div>
+                <div class="pricingImages">
+                    <p> "I created a video using an older blog post and it's been a huge hit! Great
+                        way to freshen up and share things again— <strong>170,000 views </strong>and climbing!"
+                    </p>
+                    <p> LAUREN CASPER </p>
+                </div>
+            </div>
+            <!-- 2 comment member -->
+            <div class="pricingMememberComment">
+                <div class="pricingImages">
+                    <img src="./images/comment-steve.png">
+                </div>
+                <div>
+                    <p> "Lumen5 is fantastic! I made a video and now it has gone viral!
+                        It has <strong>22,000</strong> views from a reach of 65,000. No advertising. No promotion."
+                    </p>
+                    <p> STEVE LAST </p>
+                </div>
+            </div>
+            <!-- 3 comment   -->
+            <div class="pricingMememberComment">
+                <div class="pricingImages">
+                    <img src="./images/comment-kaylene.png">
+                </div>
+                <div>
+                    <p>"My Lumen5 video went viral with over<strong>3 million reach</strong> and it grew my page from
+                        1500 to 5000 likes! I’m making these for all my top posts."</p>
+                    <p> KAYLENE GEORGE </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- 2 pricingMembers end -->
+        <!-- frequently asked questions  -->
+        <h1 style="text-align: center;"> A few frequently asked questions </h1>
+        <div id="pricingFrequently">
+            <div>
+                <h1>What if I only need Lumen5 for a set amount of time?</h1>
+                <p>That's fine! You can cancel your account anytime. </p>
+                <h1> Do you have a non-profit discount?</h1>
+                <p>We do. Contact us for more information.</p>
+            </div>
+            <div>
+                <h1>What happens to my videos if I cancel?</h1>
+                <p>All the videos you create are yours to keep forever and ever.</p>
+                <h1> How do I pay for my plan? </h1>
+                <p>You can pay with Visa, Mastercard, and American Express. All prices are in USD. Invoiced billing is available on the Team plan and above.</p>
+            </div>
+        </div>
+
     </div>
-<script src="script.js"> </script>
+    <!-- full end -->
+    <script src="script.js"> </script>
 </body>
 
 </html>
