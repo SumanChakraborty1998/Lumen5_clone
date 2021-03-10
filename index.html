@@ -206,8 +206,8 @@
     #pricingFrequently{
         display: flex;
         flex: 1;
-        justify-content: space-between;
-        margin: 142px;
+        justify-content: space-evenly;
+        margin: 42px;
         color:#24282f;
     }
     #pricingFrequently > div > h1{
@@ -218,6 +218,50 @@
     #pricingFrequently > div > p{
         font-size: 19px;
         margin-bottom: 19px;
+    }
+    #priceChoosePlan{
+        display: flex;
+        padding: 0px 6px;
+        margin: 5vh 100vh;
+        font-size: 22px;
+    }
+    #priceChoosePlan > div{
+        padding: 0px 5vh;
+        color: #24282f;
+        font-size: 22px;
+    }
+    #priceChoosePlan >div> input{
+        border: 1px solid #5846f6;
+        border-radius: 20px;
+        padding: 13px;
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+        color: #5846f6;
+        text-decoration: none;
+        outline: none;
+    }
+   
+    #priceChoosePlan >div> p+p{
+        color: #24282f;
+        font-size: 16px;
+    }
+    #priceChoosePlan >div> p{
+        color: #24282f;
+        font-size: 26px;
+    }
+    #priceChoosePlan >div> input{
+        color: #24282f;
+        font-size: 16px;
+    }
+    #priceChoosePlan >div> input:hover{
+            background: dodgerblue;
+    }
+    .pricingMememberComment  > .pricingImages + div{
+        font-size: 19px;
+    }
+    .pricingMememberComment  > .pricingImages + div > p + p{
+        font-size: 15px;
     }
     /* @media screen  and (min-width: 768PX) {
         #pricingContainers{
@@ -236,7 +280,7 @@
     <div id="pricingContainers">
         <div id="pricingHeaders">
             <p id="pricingheaders"> pricing </p>
-            <h1> plans for your video content <br> creation strategy </h1>
+            <h1> Plans for your video content <br> creation strategy </h1>
         </div>
 
         <!-- price button -->
@@ -511,6 +555,32 @@
         </div>
         <!-- 2 pricingMembers end -->
         <!-- frequently asked questions  -->
+        <h1 style="text-align: center;"> Choose the plan that's right for you </h1>
+        <div id="priceChoosePlan"> 
+            <div> 
+                <p> Creator </p>
+                <p> $15 USD/month </p>
+                <input type="button" value="Try it"/>
+            </div>
+            <div> 	
+                
+                <p> Premium </p>
+                <p> $79 USD/month</p>
+                <input type="button" value="Try it"/>
+            </div>
+            <div> 
+                <p>   Business </p>
+                <p> $199 USD/month </p>
+                <input type="button" value="Try it"/>
+            </div>
+            <div> 
+                <p>   Enterprise </p>
+                <p> $199 USD/month </p>
+                <input type="button" value="Lets talk"/>
+            </div>
+       </div>
+       
+       <hr style="height:2px;background-color: #f5f5f5;">
         <h1 style="text-align: center;"> A few frequently asked questions </h1>
         <div id="pricingFrequently">
             <div>
@@ -523,7 +593,7 @@
                 <h1>What happens to my videos if I cancel?</h1>
                 <p>All the videos you create are yours to keep forever and ever.</p>
                 <h1> How do I pay for my plan? </h1>
-                <p>You can pay with Visa, Mastercard, and American Express. All prices are in USD. Invoiced billing is available on the Team plan and above.</p>
+                <p>You can pay with Visa, Mastercard, and American Express. <br>All prices are in USD. Invoiced billing is available on the Team plan and above.</p>
             </div>
         </div>
 
