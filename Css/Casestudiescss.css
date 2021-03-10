@@ -52,6 +52,8 @@
     border: 1px solid rgb(88,70,246);
     border-radius: 20px;
     color: rgb(88,70,246);
+    transition: all 300ms ease-in-out;
+  
 }
 #signup{
     background-color: rgb(88,70,246);
@@ -63,6 +65,7 @@
     color: white;
     font-size: 20px;
 }
+
 .styckynav{
     width: 99%;
     height: 12vh;
@@ -75,7 +78,15 @@
     height: 70px;
     padding: 0%;
 }
+#login:hover{
+    background-color: rgb(29, 10, 201) ;
+    color:white ;
+}
+#signup:hover{
+    background-color: rgb(29, 10, 201) ;
+}
 /* Nav bar end */
+
 /* msgbtn */
 #msgbtn{
     width: 100px;
@@ -84,7 +95,11 @@
     right: 50px;
     bottom: 50px;
     border-radius: 50%;
+    background-color: rgb(29, 10, 201);
     border: 1px solid black;
+}
+#msgbtn:focus{
+    outline: none;
 }
 #msgbtn>img{
  width: 60px;
@@ -97,12 +112,46 @@
     right: 50px;
     bottom: 150px;
     border-radius: 20px;
-   background-color: blue;
    overflow: auto;
+   transition: all 1000ms ease-in-out;
+   opacity: 1;
 }
 .hide{
-    display: none;
+    transition: all 600ms ease-in-out;
+    opacity: 0.00;
+    
 }
+#div1{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(56,37,223);
+    margin-bottom:0.2px;
+  
+}
+#div1>img{
+    width: 50%;
+    height: 50px;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+#div1>h2{
+text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+#div1>p{
+    text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+#div2{
+    width: 100%;
+    height: 300vh;
+    margin-top: 0%;
+    padding-top: 0%;
+    background-color:greenyellow ;
+}
+
 /* Content box1 start */
 #description-box{
     height: 125vh;
@@ -159,6 +208,11 @@
     color: white;
     border-radius: 50px;
     font-size: 22px;
+    transition: all300ms ease-in-out;
+}
+.desparabtn:hover{
+    background-color:rgb(29, 10, 201) ;
+    
 }
 #centrebox{
     width: 20%;
@@ -222,6 +276,10 @@
     background-color: white;
     color:rgb(88,70,246);
     font-size: 20px;
+}
+.btm-btn:hover{
+    background-color: rgba(250, 245, 245, 0.781);
+    transition: all300ms ease-in-out;
 }
 .footer{
     width: 100%;
