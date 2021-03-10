@@ -1,5 +1,4 @@
 window.onscroll=function(){
-    console.log(scrollY)
 var div= document.querySelector('#caseNav')
 div.classList.add('styckynav');
 var imagnav= document.querySelector('#logo')
@@ -10,4 +9,8 @@ if(scrollY<=50){
 }
 }
 
-document.querySelector("")
+document.querySelector("#msgbtn").addEventListener("click", messagediv)
+function messagediv(){
+    let div=document.querySelector("#msgbox")
+    div.classList.toggle("hide")
+}
