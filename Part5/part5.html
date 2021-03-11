@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="part5.css" />
+    <title>Part5</title>
+  </head>
+  <body>
+    <div id="part5">
+      <div class="part5">
+        <h1>See what you can create with Lumen5</h1>
+        <div class="video-block">
+          <!-- colum1 -->
+          <div class="video-block-col1">
+            <div class="video-block-row11">
+              <video
+                class="video-block-video"
+                onclick="toggel();"
+                src="./assets/Videos/Detox_with_this_Nutr_11.mp4"
+                video="web/mp4"
+                loop
+              ></video>
+            </div>
+
+            <div class="video-block-row12">
+              <video
+                class="video-block-video"
+                src="./assets/Videos/How_Healthy_are_Cana_12.mp4"
+                video="web/mp4"
+                loop
+              ></video>
+            </div>
+          </div>
+          <!-- colum2 -->
+          <div class="video-block-col2">
+            <div class="video-block-row21">
+              <video
+                class="video-block-video"
+                src="./assets/Videos/Bucket_List_Travel_T_21.mp4"
+                video="web/mp4"
+                loop
+              ></video>
+            </div>
+
+            <div class="video-block-row22">
+              <video
+                class="video-block-video"
+                src="./assets/Videos/Are_you_trying_to_in_22.mp4"
+                video="web/mp4"
+                loop
+              ></video>
+            </div>
+          </div>
+          <!-- colum3 -->
+          <div class="video-block-col3">
+            <div class="video-block-row31">
+              <video
+                class="video-block-video"
+                src="./assets/Videos/How_to_Work_From_Hom_31.mp4"
+                video="web/mp4"
+                loop
+              ></video>
+            </div>
+
+            <div class="video-block-row32">
+              <video
+                class="video-block-video"
+                src="./assets/Videos/Using_Video_to_Sell_32.mp4"
+                video="web/mp4"
+                loop
+              ></video>
+            </div>
+
+            <div class="video-block-row33">
+              <video
+                class="video-block-video"
+                src="./assets/Videos/Financial_Tips_To_Ma_33.mp4"
+                video="web/mp4"
+                loop
+              ></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      //   var figure = $(".video-block-video").hover(hoverVideo, hideVideo);
+
+      //   function hoverVideo(e) {
+      //     $("video", this).get(0).play();
+      //   }
+
+      //   function hideVideo(e) {
+      //     $("video", this).get(0).pause();
+      //   }
+
+      //   video.on("mouseover", function () {
+      //     video.get(0).play();
+      //   });
+
+      //   video.on("mouseout", function () {
+      //     video.get(0);
+      //   });
+
+      //   function playVideo() {
+      //     video.play();
+      //   }
+      //   function pauseVideo() {
+      //     video.pause();
+      //   }
+
+      //   video.addEventListener("mouseover", playVideo);
+      //   video.addEventListener("mouseout", pauseVideo);
+
+      var video = document.querySelectorAll("video");
+
+      video.forEach((video) => {
+        video.addEventListener("mouseover", function () {
+          this.play();
+        });
+        video.addEventListener("mouseout", function () {
+          this.pause();
+        });
+        // video.addEventListener("click", function () {
+        //   block = document.createElement("div");
+
+        //   this.play();
+        // });
+      });
+
+      function toggel() {
+        video.classList.toggel("active");
+        video.pause();
+        video.currentTime = 0;
+      }
+      //   window.document.onkeydown = function (el) {
+      //     if (!el) {
+      //       el = event;
+      //     }
+      //     if ((el.keyCode = 27)) {
+      //       ligthBoxClose();
+      //     }
+      //     function ligthBoxOpen() {
+      //       var ligthBoxVideo = document.getElementsByClassName(
+      //         "video-block-video"
+      //       );
+      //     }
+      //   };
+    </script>
+  </body>
+</html>

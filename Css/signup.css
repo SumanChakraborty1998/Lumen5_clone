@@ -12,7 +12,8 @@
     width: 25%;
     /* background-image: url("Images/lumen_intro.png"); */
     padding-left: 4%;
-    background: rgb(70, 70, 228);
+    /* background: rgb(70, 70, 228); */
+    background-image: url("assets/images/login_signup_back_image.png");
     position: fixed;
   
     
@@ -227,6 +228,10 @@
 #lastLogin {
     text-align: center;
     font-size: 15px;
+}
+
+#name, #mail, #pass{
+    font-family: 'Poppins', sans-serif;
 }
 
 
