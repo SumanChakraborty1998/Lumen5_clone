@@ -14,7 +14,3 @@ function messagediv(){
     let div=document.querySelector("#msgbox")
     div.classList.toggle("hide")
 }
-// let divscroll= document.querySelector("#msgbox")
-// divscroll.onscroll=function(){
-//     console.log(scrollY)
-// }
