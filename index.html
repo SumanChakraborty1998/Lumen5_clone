@@ -6,15 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap"
-        rel="stylesheet">
     <title>pricing Tag</title>
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
     #pricingContainers {
         background: #ffffff;
     }
@@ -35,12 +30,13 @@
 
     #pricingBill {
         text-align: center;
+        
     }
 
     #pricingBill>input {
         border: 1px solid white;
         text-align: center;
-        padding: 12px;
+        padding: 7px;
         border-radius: 20px;
         color: white;
         font-size: 20px;
@@ -73,8 +69,10 @@
     }
 
     .pricingPremiumpadding {
-        padding-bottom: 32px;
+        padding-bottom: 22px;
         color: #000000;
+
+        font-family: "Poppins", sans-serif;
     }
 
     .pricingPremiumpadding>input {
@@ -105,10 +103,14 @@
         font-size: 16px;
         margin: -12px;
         text-align: center;
+        font-family: 'Poppins', sans-serif;
+
     }
 
     .pricingCheckSymbol {
         display: flex;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: -23px;
     }
 
     .pricingCheckSymbol>img {
@@ -117,33 +119,36 @@
     }
 
     #priceBusiness {
-        margin: 220px 20px;
+        margin: 160px 10px;
         /* border: 1px solid red; */
         padding: 12px;
         color: #24282f;
+    
     }
 
     .priceBusinessPlus {
         text-align: center;
         padding-top: 59px;
         font-size: 34px;
-
+        font-family: 'Poppins', sans-serif;
     }
 
     .priceBusinessPlus>input {
         text-align: center;
         margin-top: 12px;
+        outline: none;
         padding-top: 1px;
-        width: 20vh;
+        width: 30vh;
         font-size: 24px;
         border: 1px solid #5846f6;
         border-radius: 15px;
-        color: #5846f6;
-        outline: none;
+        color: white;
+        font-family: 'Poppins', sans-serif;
     }
 
     .priceBusinessPlus>input:hover {
         background: dodgerblue;
+        color: white;
     }
 
 
@@ -191,6 +196,7 @@
         width: 125vh;
         text-align: center;
         color: #24282f;
+        font-family: 'Poppins', sans-serif;
 
     }
 
@@ -209,6 +215,7 @@
         justify-content: space-evenly;
         margin: 42px;
         color:#24282f;
+        font-family: 'Poppins', sans-serif;
     }
     #pricingFrequently > div > h1{
         font-size: 28px;
@@ -218,20 +225,32 @@
     #pricingFrequently > div > p{
         font-size: 19px;
         margin-bottom: 19px;
+        font-family: 'Poppins', sans-serif;
+
     }
     #priceChoosePlan{
         display: flex;
         padding: 0px 6px;
-        margin: 5vh 100vh;
+        margin: 2vh 100vh;
         font-size: 22px;
+        font-family: 'Poppins', sans-serif;
     }
     #priceChoosePlan > div{
-        padding: 0px 5vh;
+        padding: 0px 4vh;
         color: #24282f;
         font-size: 22px;
     }
+    #pricingFrequently> div > p:nth-child(1){
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 27px;
+    }
+    #pricingFrequently> div > p:nth-child(3){
+        font-size: 24px;
+        margin-bottom: 27px;
+    }
     #priceChoosePlan >div> input{
-        border: 1px solid #5846f6;
+        border: 1px solid #5d61f6;
         border-radius: 20px;
         padding: 13px;
         text-align: center;
@@ -248,10 +267,11 @@
     }
     #priceChoosePlan >div> p{
         color: #24282f;
-        font-size: 26px;
+        font-size: 29px;
+        font-weight: bold;
     }
     #priceChoosePlan >div> input{
-        color: #24282f;
+        /* color: #24282f; */
         font-size: 16px;
     }
     #priceChoosePlan >div> input:hover{
@@ -263,16 +283,84 @@
     .pricingMememberComment  > .pricingImages + div > p + p{
         font-size: 15px;
     }
-    /* @media screen  and (min-width: 768PX) {
-        #pricingContainers{
-            background: white;
+  
+    @media only screen and (max-width: 768px) {
+        body {
+            /* background-color: lightblue; */
         }
-        .pricingPrecommon{
-            background: green;
-            height: auto;
-            font-size: 2px;
+        #pricingPrecommon{
+            display: flex;
+            flex-direction: column;
+            /* background-color: rebeccapurple; */
         }
-    } */
+        .pricingPremium{
+            width: 60vh;
+            /* background: red; */
+            font-size: 12px;
+            height: 320px;
+            padding-bottom: 220px;
+            margin-left: 120px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        body {
+            /* background-color: limegreen; */
+        }
+        #pricingMembers{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 123px;
+        }
+        .pricingMememberComment{
+            width: 80vh;
+            font-size: 12px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        body {
+            /* background-color: limegreen; */
+        }
+        #priceChoosePlan{
+            display: flex;
+            flex-direction: column;
+            margin-left: -20px;
+        }
+        #priceChoosePlan > div > input{
+            width: 220px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        body {
+            /* background-color: limegreen; */
+        }
+        #priceBusiness{
+         /* font-size: 12px; */
+         width: 70vh;
+         margin-top: -32px;
+         margin-left: 122px;
+        }
+        .priceBusinessPlus{
+            font-size: 19px;
+        }
+        .priceBusinessPlus > span {
+            display: block;
+        }
+        
+    }
+    @media only screen and (max-width: 768px) {
+        body {
+            /* background-color: limegreen; */
+        }
+        #pricingFrequently{
+         /* font-size: 12px; */
+          width: 60vh;
+          display: flex;
+          flex-direction: column;
+        }
+    }
+
+    
 </style>
 
 
@@ -382,7 +470,7 @@
                         <p>check1080p video resolution </p>
                     </div>
                 </div>
-            </div>
+            </div>  
 
             <!--  price descrip 4 -->
             <div class="pricingPremium">
@@ -428,7 +516,7 @@
             <div class="pricingPremium">
                 <div class="pricingPremiumpadding">
                     <h1>Enterprise</h1>
-                    <p>For large-scale video of videos<br>teams</p>
+                    <p>For large-scale video of videos</p>
                 </div>
                 <div class="pricingPremiumpadding">
                     <h1><span>$ </span>custom</h1>
@@ -559,40 +647,44 @@
         <div id="priceChoosePlan"> 
             <div> 
                 <p> Creator </p>
-                <p> $15 USD/month </p>
-                <input type="button" value="Try it"/>
+                <p>$15USD/month </p>
+                <input type="button" value="Try it free  "/>
             </div>
             <div> 	
                 
                 <p> Premium </p>
-                <p> $79 USD/month</p>
-                <input type="button" value="Try it"/>
+                <p>$79USD/month</p>
+                <input type="button" value="Try it free"/>
             </div>
             <div> 
                 <p>   Business </p>
-                <p> $199 USD/month </p>
-                <input type="button" value="Try it"/>
+                <p>$199USD/month </p>
+                <input type="button" value="Try it free  "/>
             </div>
             <div> 
                 <p>   Enterprise </p>
-                <p> $199 USD/month </p>
-                <input type="button" value="Lets talk"/>
+                <p> $199USD/month </p>
+                <input type="button" value="Learn More"/>
             </div>
        </div>
        
        <hr style="height:2px;background-color: #f5f5f5;">
+
+        <!--  -->
+
+       <!--  -->
         <h1 style="text-align: center;"> A few frequently asked questions </h1>
         <div id="pricingFrequently">
             <div>
-                <h1>What if I only need Lumen5 for a set amount of time?</h1>
+                <p>What if I only need Lumen5 for a set amount of time?</p>
                 <p>That's fine! You can cancel your account anytime. </p>
-                <h1> Do you have a non-profit discount?</h1>
+                <p> Do you have a non-profit discount?</p>
                 <p>We do. Contact us for more information.</p>
             </div>
             <div>
-                <h1>What happens to my videos if I cancel?</h1>
+                <p>What happens to my videos if I cancel?</p>
                 <p>All the videos you create are yours to keep forever and ever.</p>
-                <h1> How do I pay for my plan? </h1>
+                <p> How do I pay for my plan? </p>
                 <p>You can pay with Visa, Mastercard, and American Express. <br>All prices are in USD. Invoiced billing is available on the Team plan and above.</p>
             </div>
         </div>
