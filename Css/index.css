@@ -100,6 +100,7 @@
     background-color: rgb(88,70,246);
     color: white;
     font-size: 2.5vh;
+    outline: none !important;
     
 }
 
@@ -212,7 +213,22 @@
 .pointer1:hover{
     background: blue !important;
     color: white !important;
+    outline: none !important;
 }
+
+
+body button{
+    outline: none;
+}
+
+
+
+/* Mangesh part 6 */
+
+
+
+
+/* End of part 6 */
 
 
 
