@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        #storyLogSidebar{
+            margin-top: 12px;
+            display: flex;
+            flex: 1;
+        }
+        .fa-ul{
+            color: blueviolet;
+            border-right: 1px solid grey;
+            padding: 12px 12px;
+            height: 82vh;
+        }
+        .logsidebar{
+            margin: 67px 1px;
+            font-size: 21px;
+            border: 1px solid grey;
+            position: static;
+        }
+        .logsidebarImport{
+            display: flex;
+            flex: 1;
+            margin: 19px;
+            width: 69vh;
+        }
+        .logsidebarImport > i{
+            position: absolute;
+            margin-left: 10px;
+            color: grey;
+
+        }
+        .logsidebarImport > .logsidebarImportUrl {
+            border-top: 1px solid transparent;
+            border-right: 1px solid transparent;
+            border-left: 1px solid transparent;
+            border-bottom: 1px solid grey;
+            width: 196vh;
+            margin-left: 3vh;
+            padding: 10px;
+            font-size: 25px;
+            text-align: center;
+            letter-spacing: 0.1em;
+        }
+        .logsidebarImport > .logsidebarImportBtn{
+            border-radius: 120px;
+            width: 90vh;
+            background-color: #5d61f6;
+            color: white;
+            font-size: 15px;
+        }
+        .loginWelcome{
+            height: 320px;
+            margin: 2px 22px;
+            width: 64vh;
+            padding: 120px 10px;
+        } 
+        .loginWelcome > input{
+            border: 1px solid transparent;
+            outline: none;
+        } 
+        .loginWelcome >  p{
+            color: grey;
+        } 
+        #logsidebarConvert{
+            display: flex;
+            height: 33px;
+        }
+        #logsidebarConvert > p{
+            font-size: 15px;
+            margin-left: 40px;
+        }
+        #logsidebarConvert > p + button{
+            background-color: #5d61f6;
+            color: white;
+            border-radius: 20px;
+            margin-left: 12px;
+            padding-left: 22px;
+            height: 6vh;
+            width: 16vh;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="storyLogSidebar">
+            <div class="logsidebar"> 
+                <ul class="fa-ul">
+                    <li><i class="fa fa-music" aria-hidden="true"></i></li>
+                    <p> story </p>
+                    <li><i class="fa fa-music" aria-hidden="true"></i></li>
+                    <p> media </p>
+                   <li> <i class="fa fa-telegram" aria-hidden="true"></i></li>
+                   <p> music </p>
+                   <li>  <i class="fa fa-quora" aria-hidden="true"></i></li>
+                   <p> format</p>
+                   <li>  <i class="fa fa-quora" aria-hidden="true"></i></li>  
+                </ul>
+            </div>
+            <div class="logsidebar">
+                <div class="logsidebarImport"> 
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" class="logsidebarImportUrl" placeholder="url to your blog / Article"/>
+                    <input type="button" class="logsidebarImportBtn" value="he"/>
+                </div>
+                <hr> 
+                <div class="loginWelcome">
+                    <input type="text" placeholder="welcomes">
+                    <p disabled>  welcome to Lumen 5 
+                        Lumen5 can help you turn your written content into video<br>
+                        Looking to media
+                    </p>
+                </div>
+
+                <div id="logsidebarConvert"> 
+                    <p>Lumen5 can help you turn your written content into video Looking </p>
+                    <button> convert video</button>
+                </div>
+            </div>
+            <div id="logsidebarRecorder"> 
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
