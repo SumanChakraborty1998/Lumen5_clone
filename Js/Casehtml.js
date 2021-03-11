@@ -14,4 +14,3 @@ function messagediv(){
     let div=document.querySelector("#msgbox")
     div.classList.toggle("hide")
 }
-
