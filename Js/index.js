@@ -43,3 +43,70 @@ function redirectMeToSignUp()
 {
     location.assign("signup.html")
 }
+
+
+
+// Mangesh Part 5********************
+
+
+
+//   var figure = $(".video-block-video").hover(hoverVideo, hideVideo);
+
+//   function hoverVideo(e) {
+//     $("video", this).get(0).play();
+//   }
+
+//   function hideVideo(e) {
+//     $("video", this).get(0).pause();
+//   }
+
+//   video.on("mouseover", function () {
+//     video.get(0).play();
+//   });
+
+//   video.on("mouseout", function () {
+//     video.get(0);
+//   });
+
+//   function playVideo() {
+//     video.play();
+//   }
+//   function pauseVideo() {
+//     video.pause();
+//   }
+
+//   video.addEventListener("mouseover", playVideo);
+//   video.addEventListener("mouseout", pauseVideo);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var video = document.querySelectorAll("video");
+
+// video.forEach((video) => {
+// video.addEventListener("mouseover", function () {
+//     this.play();
+// });
+// video.addEventListener("mouseout", function () {
+//     this.pause();
+// });
+
+// });
+
+// function toggel() {
+// video.classList.toggel("active");
+// video.pause();
+// video.currentTime = 0;
+// }
+
+
+// Mangesh Part 5******************** END
