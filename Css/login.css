@@ -222,6 +222,7 @@
   #ForgetpassFont {
     font-size: 15px;
     color: gray;
+    font-family: 'Poppins', sans-serif;
   }
   #loginFont {
     font-family: 'Poppins', sans-serif;
