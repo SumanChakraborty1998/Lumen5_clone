@@ -9,14 +9,9 @@ if(scrollY<=50){
 }
 }
 
-<<<<<<< HEAD:Casehtml.js
-
-
-document.querySelector("")
-=======
 document.querySelector("#msgbtn").addEventListener("click", messagediv)
 function messagediv(){
     let div=document.querySelector("#msgbox")
     div.classList.toggle("hide")
 }
->>>>>>> a2e99ab0974e76d6678efe36d0c81317497bb675:Js/Casehtml.js
+
