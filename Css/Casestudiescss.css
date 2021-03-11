@@ -280,21 +280,36 @@ text-align: center;
 .btm-btn:hover{
     background-color: rgba(250, 245, 245, 0.781);
     transition: all300ms ease-in-out;
+    
 }
+/* footer part */
 .footer{
     width: 100%;
-    height: 90vh;
+    height: 60vh;
     margin-top: 5%;
     background-color:rgb(36,40,47) ;
     color: white;
 }
 .footer-div1{
-    width: 20%;
+    width: fit-content;
+    max-width: 200px;
+    padding:50px ;
     height: 70%;
     float: left;
-    margin: 3%;
+    margin: 2%;
     margin-top: 2%;
+   
 }
 .footrimg{
-    width: 40%;
+   max-width:200px;
 }
+.footer-p{
+    font-size: 25px;
+}
+.footer a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 20px;
+}
+
