@@ -147,7 +147,9 @@ let updateOnStorage = function()
 
         else
         {
-            alert("Passwords must be same..")
+            alert("Passwords must be same..");
+            document.getElementById("new_pass").value = null;
+            document.getElementById("confirm_pass").value = null;
         }
     }
 }
