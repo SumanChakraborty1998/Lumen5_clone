@@ -13,9 +13,12 @@
 .signup-page1-intro {
   margin-top: 5vh;
 }
-.signup-page1-intro > p > a {
+.a {
   font-size: 16px;
-  margin-left: 25vw;
+  margin-left: 80vw;
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(88,70,246);
 }
 .signup-page1-intro-1 {
   font-size: 30px;
