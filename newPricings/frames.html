@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f0f0f4;
+        }
+        #storyLogSidebar{
+            margin-top: 12px;
+            display: flex;
+            flex: 1;
+        }
+        .fa-ul{
+            color: blueviolet;
+            /* border-right: 1px solid grey; */
+            padding: 12px 12px;
+            height: 22vh;
+        }
+        .logsidebar{
+            margin: 7px 1px;
+            font-size: 21px;
+            border-bottom: 1px solid transparent;
+            border-left: 1px solid green;
+            border-right: 1px solid green;
+            
+        }
+        .logsidebarImport{
+            display: flex;
+            flex: 1;
+            margin: 19px;
+            width: 69vh;
+            padding: 12px 60px;
+        }
+        .logsidebarImport > i{
+            position: absolute;
+            margin-left: 10px;
+            color: grey;
+
+        }
+        .logsidebarImport > .logsidebarImportUrl {
+            border-top: 1px solid transparent;
+            border-right: 1px solid transparent;
+            border-left: 1px solid transparent;
+            border-bottom: 1px solid grey;
+            width: 196vh;
+            margin-left: 3vh;
+            padding: 10px;
+            font-size: 25px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            outline: none;
+        }
+        .logsidebarImport > .logsidebarImportBtn{
+            border-radius: 120px;
+            width: 90vh;
+            background-color: #5d61f6;
+            color: white;
+            font-size: 15px;
+            outline: none;
+        }
+        .loginWelcome{
+            height: 220px;
+            margin: 2px 22px;
+            width: 64vh;
+            padding: 120px 10px;
+        } 
+        .loginWelcome > input{
+            border: 1px solid transparent;
+            outline: none;
+        } 
+        .loginWelcome >  p{
+            color: grey;
+        } 
+        #logsidebarConvert{
+            display: flex;
+            height: 33px;
+            /* border: 1px solid red; */
+            padding: 20px;
+        }
+        #logsidebarConvert > p{
+            font-size: 15px;
+            margin-left: 40px;
+        }
+        #logsidebarConvert > p + button{
+            background-color: #5d61f6;
+            color: white;
+            border-radius: 20px;
+            margin-left: 12px;
+            padding-left: 22px;
+            height: 6vh;
+            width: 16vh;
+        }
+        #logsidebarRecorder{
+            margin:1vh 0px;
+            /* border: 1px solid red; */
+            background: #f0f0f4;
+        }
+        #logsidebarVoice{
+            background: #f0f0f4;
+            /* border: 1px solid green; */
+            margin: 35vh 18px;
+            
+        }
+        #logsidebarRecorder > input{
+            position: absolute;
+            margin: 60px 30px;
+            color: #7a7d81;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            padding: 9px;
+            text-align: center;
+            outline: none;
+            width: 270px;
+            background-color: #ffffff;
+        }
+        iframe{
+            width: 60vh;
+            height:42vh;
+            margin: 0px 4px;
+            /* overflow: scroll; */
+        }
+        .logsidebarbtns{
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            margin: 4vh 10vh;
+            position:absolute;
+            top:50%;
+            width:100%;text-align:center;
+            /* margin:0 auto; */
+            color: white;font: bold 20px;
+            padding: 12px;
+
+        }
+        .logsidebarbtns > button{
+            position: relative;
+            width: 120px;
+            border: 1px solid transparent;
+            text-align: center;
+            margin: 10px 50vh;
+            box-shadow: 4px 4px;
+            background: #ffffff;
+            border-radius: 5px;
+            padding-bottom: 12px;
+
+        }
+        .logsidebarbtns > p{
+            position: relative;
+            width: 430px;
+            height: 120px;
+            font-size: 41px;
+            border: 1px solid transparent;
+            text-align: center;
+            margin: -140px 0vh;
+            background: goldenrod;
+            border-radius: 5px;
+            padding-bottom: 12px;
+        }
+        #logsidebarbtnsFrame{
+            /* height: 20vh; */
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <div id="storyLogSidebar">
+            <div class="logsidebar"> 
+                <ul class="fa-ul">
+                    <li><i class="fa fa-music" aria-hidden="true"></i></li>
+                    <p> story </p>
+                    <li><i class="fa fa-music" aria-hidden="true"></i></li>
+                    <p> media </p>
+                   <li> <i class="fa fa-telegram" aria-hidden="true"></i></li>
+                   <p> music </p>
+                   <li>  <i class="fa fa-quora" aria-hidden="true"></i></li>
+                   <p> format</p>
+                   <li>  <i class="fa fa-quora" aria-hidden="true"></i></li>  
+                </ul>
+            </div>
+            <div class="logsidebar">
+                <div class="logsidebarImport"> 
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" class="logsidebarImportUrl" placeholder="url to your blog / Article"/>
+                    <input type="button" class="logsidebarImportBtn" value="he"/>
+                </div>
+                <hr> 
+                <div class="loginWelcome">
+                    <input type="text" placeholder="welcomes">
+                    <p disabled>  Welcome to Lumen5
+
+                        Lumen5 can help you turn your written content into a video. Simply copy + paste your text here or copy a URL into the box above.
+                        
+                        Looking for media? Explore our Media Library to the left or upload your own.
+                            
+                        Want to build your video scene by scene? Click the plus button (+) on the right to create your first one.
+                    </p>
+                </div>
+
+                <div id="logsidebarConvert"> 
+                    <p>Lumen5 can help you turn your written content into video Looking </p>
+                    <button> convert video</button>
+                </div>
+            </div>
+            <div id="logsidebarRecorder"> 
+                <input type="button" value="record your own voiceover"/>
+                <div id="logsidebarVoice"> 
+                    <div class="logsidebarbtns">
+                        <!-- <button id="btn1" onclick="myFunction()"> preview </button> -->
+                        <button id="myBtn" onclick="myFunction()">Pause</button>
+                        <button id="btn2"> seconds </button>
+                        <button id="btn3"> ... more options </button>
+                        <p id="pbtn">2. Improve communication among members</p>
+                    </div>
+                    <!-- <div class="logsidebarbtnsFrame">
+                        <iframe id="myVideo" src="./video/Relaxing Walk in the Rain, Umbrella and Nature Sounds for Sleep and Relaxation _ 4k ASMR.mp4" type="video/mp4" frameborder="0"></iframe>
+                    </div> -->
+                    <div class="logsidebarbtnsFrame">
+                        <video style="width: 420px;height: 500px;" autoplay muted loop id="myVideo">
+                            <source src="./video/rain.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                          </video>
+                          
+                    </div>
+                </div>
+                <div id="previewDetails"></div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+var pbtn = document.getElementById("pbtn");
+
+    function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+    pbtn.style.display="none"
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+    // pbtn.style.display="show"
+  }
+}
+    
+      </script>
+</body>
+</html>
