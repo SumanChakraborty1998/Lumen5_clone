@@ -33,30 +33,30 @@ var btn2 = document.getElementById("myBtn2").addEventListener("click", function 
                 <tr>
                     <h1> Select Layout Download </h1>
                     <td> 
-                        <img id="imgagedownload" class="layout_img" src="./images/download.jpeg" alt="img" download />
+                        <img id="imgagedownload" class="layout_img" src="../../images/layout.jpeg" alt="img" download />
                     </td>
                     <td> 
-                        <img class="layout_img" src="./images/download.jpeg" alt="img">
+                        <img class="layout_img" src="../../images/layout.jpeg" alt="img">
                     </td>
                     <td> 
-                        <img class="layout_img" src="./images/download.jpeg" alt="img">
+                        <img class="layout_img" src="../../images/layout.jpeg" alt="img">
                     </td>
                     <td> 
-                        <img class="layout_img" src="./images/download.jpeg" alt="img">
+                        <img class="layout_img" src="../../images/layout.jpeg" alt="img">
                     </td>
                 </tr>
                 <tr>
                     <td> 
-                        <img class="layout_img" src="./images/layout.jpeg" alt="img">
+                        <img class="layout_img" src="../../images/layout.jpeg" alt="img">
                     </td>
                     <td> 
-                        <img class="layout_img" src="./images/layout.jpeg" alt="img">
+                        <img class="layout_img" src="../../images/layout.jpeg" alt="img">
                     </td>
                     <td> 
-                        <img class="layout_img" src="./images/layout.jpeg" alt="img">
+                        <img class="layout_img" src="../../images/layout.jpeg" alt="img">
                     </td>
                     <td> 
-                        <img class="layout_img" src="./images/layout.jpeg" alt="img">
+                        <img class="layout_img" src="../../images/layout.jpeg" alt="img">
                     </td>
                 </tr>
           </table>
