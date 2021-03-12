@@ -24,15 +24,31 @@ let validateMyData = () => {
 
         else
         {
-            if(pass.length < 8)
-                alert("Enter your password of 8 digits")
 
-            else
+            if(validate(mail) == false)
             {
-                document.getElementById("name").value = null
+                document.getElementById("rushifont15").innerText = "Invalid Email address";
+                document.getElementById("rushifont15").style.color = "red"
                 document.getElementById("mail").value = null;
                 document.getElementById("pass").value = null;
-                storeData(name, mail, pass);
+            }
+            else
+            {
+            
+                if(pass.length < 8)
+                    alert("Enter your password of 8 digits")
+
+                else
+                {
+                    document.getElementById("name").value = null
+                    document.getElementById("mail").value = null;
+                    document.getElementById("pass").value = null;
+                    storeData(name, mail, pass);
+
+                    setTimeout(function(){
+                        location.assign("login.html");
+                    }, 2000)
+                }
             }
         }
         
@@ -41,6 +57,34 @@ let validateMyData = () => {
 
 
 }
+
+
+
+function validateEmail(email)
+{
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+  
+function validate(email)
+{
+    
+  
+    if (validateEmail(email))
+    {
+        
+        return true;
+    } 
+
+    else
+    {
+        
+        return false;
+    }
+    return false;
+}
+  
+
 
 function checkMail(email)
 {
@@ -73,14 +117,14 @@ function checkMail(email)
 
 }
 
-// export {checkMail}
+
 
 
 
 
 let storeData = function(name, mail, pass)
 {
-    // console.log(name,mail,pass);
+    
 
     let user_data = {
         name: name,
@@ -88,7 +132,7 @@ let storeData = function(name, mail, pass)
         password: pass
     };
 
-    // console.log(user_data);
+    
 
     let user_db = localStorage.getItem("lumen_5_users");
     let data_list = [];
@@ -99,7 +143,7 @@ let storeData = function(name, mail, pass)
     }
 
     data_list.push(user_data)
-    // console.log(data_list);
+    
 
     localStorage.setItem("lumen_5_users", JSON.stringify(data_list));
 }

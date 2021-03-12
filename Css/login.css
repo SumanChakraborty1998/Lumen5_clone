@@ -127,8 +127,11 @@
     padding-top: 50px;
   }
   #LogInLogo {
-    height: 180px;
+    /* height: 180px; */
+    width: 400px;
+    margin-left: 12%;
     text-align: center;
+    /* border: solid red; */
   }
   #LogInLogo > img {
     width: 90px;
@@ -231,6 +234,12 @@
     margin-left: unset;
   }
 
+  .onfocus_change{
+    border-radius: 50px;
+    border: solid rgb(88,70,246) 1px;
+    /* background: rgb(88,70,246); */
+  }
+
   #mail, #pass{
     font-family: 'Poppins', sans-serif;
     border: solid black;
@@ -251,3 +260,28 @@
 #login_button{
   background: rgb(88,70,246);
 }
+
+@media only screen and (max-width: 768px) {
+
+
+  #LogInLogo {
+    /* height: 180px; */
+    width: 400px;
+    margin-left: 5%;
+
+  }
+
+} 
+
+
+@media only screen and (max-width: 992px) {
+
+
+  #LogInLogo {
+    /* height: 180px; */
+    /* width: 400px; */
+    margin-left: 5%;
+
+  }
+
+} 
