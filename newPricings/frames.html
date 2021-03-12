@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>
     <style>
         body {
-            background-color: #f0f0f4;
+            background-color: white;
         }
 
         #storyLogSidebar {
@@ -26,8 +28,9 @@
             margin: 7px 1px;
             font-size: 21px;
             border-bottom: 1px solid transparent;
-            border-left: 1px solid green;
+            /* border-left: 1px solid grey; */
             border-right: 1px solid green;
+            padding: 0vh 2vh;
 
         }
 
@@ -72,10 +75,10 @@
         }
 
         .loginWelcome {
-            height: 490px;
-            margin: 2px 22px;
+            height: 430px;
+            margin: 2px 12px;
             width: 95vh;
-            padding: 120px 10px;
+            padding: 110px 0px;
             background: #ffffff;
             color: #7a7d81;
         }
@@ -169,7 +172,7 @@
             width: 120px;
             border: 1px solid transparent;
             text-align: center;
-            margin: 10px 50vh;
+            margin: 10px 44vh;
             /* box-shadow: 4px 4px; */
             background: #ffffff;
             border-radius: 5px;
@@ -180,7 +183,7 @@
 
         .logsidebarbtns>p {
             position: relative;
-            width: 430px;
+            width: 380px;
             height: 120px;
             font-size: 41px;
             border: 1px solid transparent;
@@ -202,15 +205,16 @@
         <div id="storyLogSidebar">
             <div class="logsidebar">
                 <ul class="fa-ul">
-                    <li><i style="color: blue;" class="fa fa-music" aria-hidden="true"></i></li>
+                    <li><i style="color: blue;" class="material-icons">archive</i></li>
                     <p style="color: blue;"> story </p>
                     <li><i class="fa fa-music" aria-hidden="true"></i></li>
                     <p> media </p>
                     <li> <i class="fa fa-telegram" aria-hidden="true"></i></li>
-                    <p> music </p>
-                    <li> <i class="fa fa-quora" aria-hidden="true"></i></li>
-                    <p> format</p>
-                    <li> <i class="fa fa-quora" aria-hidden="true"></i></li>
+                    <p> telegram </p>
+                    <li><i class="material-icons">event_available</i></li>
+                    <p> event</p>
+                    <li><i class="material-icons">content_cut</i></li>
+                    <p>content </p>
                 </ul>
             </div>
             <div class="logsidebar">
@@ -235,7 +239,7 @@
 
                 </div>
                 <div id="logsidebarConvert">
-                    <p>Lumen5 can help you turn your written content </p>
+                    <p>Lumen5 can help you turn your written content your  </p>
                     <button id="converterBtn"> convert video</button>
                 </div>
 
@@ -246,14 +250,14 @@
                 <div id="logsidebarVoice">
                     <div class="logsidebarbtns">
                         <!-- <button id="btn1" onclick="myFunction()"> preview </button> -->
-                        <button id="myBtn" onclick="myFunction()">Pause</button>
-                        <button id="myBtn2"> select some  images </button>
+                        <button id="myBtn" onclick="myFunction()"><i class='fa fa-caret-right' style="margin: 10px;"></i>Pause </button>
+                        <button id="myBtn2"><i class="fa fa-dropbox"style="margin: 5px;"></i> add images  </button>
                         <button id="btn3"> ... more options </button>
                         <p id="pbtn">Improve communication among members</p>
                     </div>
                     <div class="logsidebarbtnsFrame">
-                        <video autoplay muted loop id="myVideo">
-                            <source src="./video/videoplayback (4).mp4" type="video/mp4">
+                        <video style="width: 65vh;margin: 14vh 0vh;" autoplay muted loop id="myVideo">
+                            <source src="./video/Be The Change - Let's Do It _ Communication Skills Motivational Video.mp4" type="video/mp4">
                        </video>
 
                     </div>
