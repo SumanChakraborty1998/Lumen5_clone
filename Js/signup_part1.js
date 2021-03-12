@@ -17,3 +17,14 @@ function myDashboard()
 }
 
 
+let logoutMe = function()
+{
+    let response = confirm("Want to logout ?")
+
+    if(response)
+        location.assign("index.html");
+    
+
+
+}
+

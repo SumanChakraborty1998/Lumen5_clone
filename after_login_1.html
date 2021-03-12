@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lumen -5 | Dashboard</title>
+
+
+    <script type="text/javascript">
+      function preventBack() { window.history.forward(); }
+      setTimeout("preventBack()", 0);
+      window.onunload = function () { null };
+    </script>
+
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
@@ -44,6 +53,8 @@
               class="userimg"
               src="https://static.thenounproject.com/png/99567-200.png"
               alt="userimg"
+              onclick="logoutMe()"
+              
             />
             <span id = "display_me"></span>
           </div>
@@ -66,7 +77,7 @@
           <p class="signup-page1-intro-1">
             Welcome, <span id="signup-page1-username"></span>! 👋
             <!-- <a href="./after_login_1.html" onclick="myDashboard()">skip</a> -->
-            <span class="a" onclick="myDashboard()" style="color:brown">skip</span>
+            <span class="a" onclick="myDashboard()">skip</span>
           </p>
           <p style="margin-top: -20px">
             We want to tailor your experience, so help us by telling a little

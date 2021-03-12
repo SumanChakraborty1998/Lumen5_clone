@@ -16,7 +16,7 @@
 
     </head>
 
-    <body>
+    <body onload="noBack();"onpageshow="if (event.persisted) noBack();" onunload="">
 
 
         <div id="parent">
@@ -119,6 +119,11 @@
             }
             // console.log(id);
         }
+
+
+        window.history.forward();
+	    function noBack() { window.history.forward(); }
+
 
     </script>
 
