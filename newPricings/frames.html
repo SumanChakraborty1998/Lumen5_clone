@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,42 +9,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <style>
-        body{
+        body {
             background-color: #f0f0f4;
         }
-        #storyLogSidebar{
+
+        #storyLogSidebar {
             margin-top: 12px;
             display: flex;
             flex: 1;
         }
-        .fa-ul{
-            color: blue;
-            /* border-right: 1px solid grey; */
-            padding: 12px 12px;
-            height: 22vh;
-        }
-        .logsidebar{
+
+    
+    
+
+        .logsidebar {
             margin: 7px 1px;
             font-size: 21px;
             border-bottom: 1px solid transparent;
             border-left: 1px solid green;
             border-right: 1px solid green;
-            
+
         }
-        .logsidebarImport{
+
+        .logsidebarImport {
             display: flex;
             flex: 1;
             margin: 19px;
             width: 30vh;
             padding: 12px 60px;
         }
-        .logsidebarImport > i{
+
+        .logsidebarImport>i {
             position: absolute;
             margin: 10px 30px;
             color: grey;
 
         }
-        .logsidebarImport > .logsidebarImportUrl {
+
+        .logsidebarImport>.logsidebarImportUrl {
             border-top: 1px solid transparent;
             border-right: 1px solid transparent;
             border-left: 1px solid transparent;
@@ -56,31 +59,37 @@
             letter-spacing: 0.1em;
             outline: none;
         }
-        .logsidebarImport > .logsidebarImportBtn{
-            border-radius: 120px;
-            width: 120px;
+
+        .logsidebarImport>.logsidebarImportBtn {
+            border-radius: 20px;
+            border: 1px solid transparent;
+            width: 320px;
             background-color: #5d61f6;
             color: white;
-            font-size: 15px;
-            margin-left: 280px;
+            font-size: 25px;
+            margin-left: 220px;
             outline: none;
         }
-        .loginWelcome{
+
+        .loginWelcome {
             height: 490px;
             margin: 2px 22px;
             width: 95vh;
             padding: 120px 10px;
             background: #ffffff;
             color: #7a7d81;
-        } 
-        .loginWelcome > input{
+        }
+
+        .loginWelcome>input {
             border: 1px solid transparent;
             outline: none;
-        } 
-        .loginWelcome >  p{
+        }
+
+        .loginWelcome>p {
             color: #7a7d81;
-        } 
-        #logsidebarConvert{
+        }
+
+        #logsidebarConvert {
             position: relative;
             display: flex;
             height: 33px;
@@ -88,13 +97,15 @@
             /* padding: 20px; */
             margin-top: -110px;
         }
-        #logsidebarConvert > p{
+
+        #logsidebarConvert>p {
             font-size: 22px;
             margin-left: 40px;
             color: #7a7d81;
 
         }
-        #logsidebarConvert > p + button{
+
+        #logsidebarConvert>p+button {
             background-color: #5d61f6;
             color: white;
             border-radius: 20px;
@@ -103,18 +114,21 @@
             height: 6vh;
             width: 16vh;
         }
-        #logsidebarRecorder{
-            margin:1vh 0px;
+
+        #logsidebarRecorder {
+            margin: 1vh 0px;
             /* border: 1px solid red; */
             background: #f0f0f4;
         }
-        #logsidebarVoice{
+
+        #logsidebarVoice {
             background: #f0f0f4;
             /* border: 1px solid green; */
             margin: 35vh 18px;
-            
+
         }
-        #logsidebarRecorder > input{
+
+        #logsidebarRecorder>input {
             position: absolute;
             margin: 60px 30px;
             color: #7a7d81;
@@ -126,38 +140,45 @@
             width: 270px;
             background-color: #ffffff;
         }
-        iframe{
+
+        iframe {
             width: 60vh;
             /* height:42vh; */
             margin: 0px 4px;
             /* overflow: scroll; */
         }
-        .logsidebarbtns{
+
+        .logsidebarbtns {
             display: flex;
             flex: 1;
             flex-direction: column;
             margin: 4vh 20vh;
-            position:absolute;
-            top:50%;
-            width:100%;text-align:center;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
             /* margin:0 auto; */
-            color: white;font: bold 20px;
+            color: white;
+            font: bold 20px;
             padding: 12px;
 
         }
-        .logsidebarbtns > button{
+
+        .logsidebarbtns>button {
             position: relative;
             width: 120px;
             border: 1px solid transparent;
             text-align: center;
             margin: 10px 50vh;
-            box-shadow: 4px 4px;
+            /* box-shadow: 4px 4px; */
             background: #ffffff;
             border-radius: 5px;
             padding-bottom: 12px;
-
+            outline: none;
+            font-weight: italic;
         }
-        .logsidebarbtns > p{
+
+        .logsidebarbtns>p {
             position: relative;
             width: 430px;
             height: 120px;
@@ -169,57 +190,60 @@
             border-radius: 5px;
             padding-bottom: 12px;
         }
-        
-        td > img{
+
+        td>img {
             width: 170px;
         }
-        
     </style>
 </head>
+
 <body>
     <div>
         <div id="storyLogSidebar">
-            <div class="logsidebar"> 
+            <div class="logsidebar">
                 <ul class="fa-ul">
-                    <li><i class="fa fa-music" aria-hidden="true"></i></li>
-                    <p> story </p>
+                    <li><i style="color: blue;" class="fa fa-music" aria-hidden="true"></i></li>
+                    <p style="color: blue;"> story </p>
                     <li><i class="fa fa-music" aria-hidden="true"></i></li>
                     <p> media </p>
-                   <li> <i class="fa fa-telegram" aria-hidden="true"></i></li>
-                   <p> music </p>
-                   <li>  <i class="fa fa-quora" aria-hidden="true"></i></li>
-                   <p> format</p>
-                   <li>  <i class="fa fa-quora" aria-hidden="true"></i></li>  
+                    <li> <i class="fa fa-telegram" aria-hidden="true"></i></li>
+                    <p> music </p>
+                    <li> <i class="fa fa-quora" aria-hidden="true"></i></li>
+                    <p> format</p>
+                    <li> <i class="fa fa-quora" aria-hidden="true"></i></li>
                 </ul>
             </div>
             <div class="logsidebar">
-                <div class="logsidebarImport"> 
+                <div class="logsidebarImport">
                     <i class="fa fa-search" aria-hidden="true"></i>
-                    <input type="text" class="logsidebarImportUrl" placeholder="    url to your blog / Article"/>
-                    <input type="button" class="logsidebarImportBtn" value="import"/>
+                    <input type="text" class="logsidebarImportUrl" placeholder="  url to your blog/Article" />
+                    <input type="button" class="logsidebarImportBtn" value="import" />
                 </div>
-                <hr> 
+                <hr>
                 <div class="loginWelcome">
                     <input type="text" placeholder="Write here something .......">
-                    <p disabled>  Welcome to Lumen5
+                    <p disabled> Welcome to Lumen5
 
-                        Lumen5 can help you turn your written content into a video. Simply copy + paste your text here or copy a URL into the box above.
-                        
+                        Lumen5 can help you turn your written content into a video. Simply copy + paste your text here
+                        or copy a URL into the box above.
+
                         Looking for media? Explore our Media Library to the left or upload your own.
-                            
-                        Want to build your video scene by scene? Click the plus button (+) on the right to create your first one.
+
+                        Want to build your video scene by scene? Click the plus button (+) on the right to create your
+                        first one.
                     </p>
-                 
+
                 </div>
-                <div id="logsidebarConvert"> 
-                    <p>Lumen5 can help you turn your written content  </p>
-                    <button> convert video</button>
+                <div id="logsidebarConvert">
+                    <p>Lumen5 can help you turn your written content </p>
+                    <button id="converterBtn"> convert video</button>
                 </div>
 
             </div>
-            <div id="logsidebarRecorder"> 
-                <input type="button" value="record your own voiceover"/>
-                <div id="logsidebarVoice"> 
+            <div id="logsidebarRecorder">
+                <i style="position: absolute; margin: 8vh 7vh;z-index: 1;" class="fa fa-microphone"></i>
+                <input type="button" value="record your own voiceover" />
+                <div id="logsidebarVoice">
                     <div class="logsidebarbtns">
                         <!-- <button id="btn1" onclick="myFunction()"> preview </button> -->
                         <button id="myBtn" onclick="myFunction()">Pause</button>
@@ -231,11 +255,11 @@
                         <iframe id="myVideo" src="./video/Relaxing Walk in the Rain, Umbrella and Nature Sounds for Sleep and Relaxation _ 4k ASMR.mp4" type="video/mp4" frameborder="0"></iframe>
                     </div> -->
                     <div class="logsidebarbtnsFrame">
-                        <video  autoplay muted loop id="myVideo">
+                        <video autoplay muted loop id="myVideo">
                             <source src="./video/videoplayback (4).mp4" type="video/mp4">
                             Your browser does not support HTML5 video.
-                          </video>
-                          
+                        </video>
+
                     </div>
                 </div>
                 <div id="previewDetails"></div>
@@ -245,31 +269,31 @@
     </div>
     <script>
 
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-var pbtn = document.getElementById("pbtn");
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+        var pbtn = document.getElementById("pbtn");
 
-    function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-    pbtn.style.display="none"
-} else {
-    video.pause();
-    btn.innerHTML = "Play";
-    document.querySelector(".loginWelcome") = "welcome"
-    // pbtn.style.display="show"
-  }
-}
-    
-var btn2  = document.getElementById("myBtn2").addEventListener("click",function(){
-    // layout design
-    var html = ""
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+                pbtn.style.display = "none"
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+                document.querySelector(".loginWelcome") = "welcome"
+                pbtn.style.display = "visible"
+            }
+        }
+
+        var btn2 = document.getElementById("myBtn2").addEventListener("click", function () {
+            // layout design
+            var html = ""
             html = `<div> 
                   <table> 
                         <tr>
                             <td> 
-                                <img class="layout_img" src="./images/download.jpeg" alt="img">
+                                <img id="imgagedownload" class="layout_img" src="./images/download.jpeg" alt="img" download />
                             </td>
                             <td> 
                                 <img class="layout_img" src="./images/download.jpeg" alt="img">
@@ -298,7 +322,18 @@ var btn2  = document.getElementById("myBtn2").addEventListener("click",function(
                   </table>
         </div>`
             document.querySelector(".loginWelcome").innerHTML = html
-});
-      </script>
+        });
+
+        var convertDowload = document.getElementById("converterBtn").addEventListener("click", function () {
+            var imgdownload = document.getElementById("imgagedownload");
+            var link = document.createElement('a');
+            link.href = "/home/milind/Lumen5_clone/newPricings/images/download.jpeg";
+            link.download = imgdownload;
+            document.body.appendChild(link);
+            link.click();
+            // document.body.removeChild(link);
+        });
+    </script>
 </body>
+
 </html>
