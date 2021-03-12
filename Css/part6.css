@@ -17,6 +17,7 @@
 }
 .part6-content {
   position: relative;
+  /* position: fixed; */
   width: 70%;
   height: 60vh;
   margin: 5vh auto;
