@@ -16,6 +16,10 @@ function creatediv(){
     console.log("deepk")
     let div=document.querySelector("#logout")
     div.classList.toggle("hidee")
+
+    setTimeout(()=>{
+        location.assign("index.html")
+    }, 3000)
 }
 document.querySelector("#msgbtn").addEventListener("click", messagediv)
 function messagediv(){
