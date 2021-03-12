@@ -81,3 +81,16 @@
   border: none;
 }
 
+.a{
+  margin-left: 10px;
+  /* background: tomato;
+  border: turquoise; */
+  margin-top: 10%;
+}
+
+#skip_btn{
+  color: rgb(88,70,246);
+  cursor: pointer;
+  text-decoration: underline;
+  
+}

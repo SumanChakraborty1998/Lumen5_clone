@@ -4,10 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lumen5 - Dashboard</title>
+
+
+    <script>
+
+
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+
+        let logoutMe = function()
+        {
+          let response = confirm("Want to logout ?")
+
+          if(response)
+              location.assign("index.html");
+          
+              console.log("hii");
+
+
+        }
+    </script>
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="lumen53logpage.css">
+    <link rel="stylesheet" href="./Css/lumen53logpage.css">
+
+
+
+    
 </head>
 <body>
     <!-- nav bar -->
@@ -26,7 +53,8 @@
         <img id="userimg" src="https://static.thenounproject.com/png/99567-200.png" alt="userimg">
       
     </div>
-    <div id="logout" class="logout hidee">
+    <span style="margin-left: 1%;" id="display_me"></span>
+    <div id="logout" class="logout hidee" style="position: fixed;" onclick="logoutMe()">
         <p> My videos</p>
             <p>My Channel</p>
             <p>Workspace</p>
@@ -36,6 +64,7 @@
             <div style="border-top: 1px solid rgba(0, 0, 0, 0.466);">
                 <p id="logoutp"><a href="./index.html"></a> Logout</p>
             </div>
+            <!-- <p onclick="logoutMe()">Logout</p> -->
     </div>
     </div>
       
@@ -57,7 +86,7 @@
 <!-- msg btn end -->
 <div>
     <h1 style="float: left; margin-left: 35%;" class="texth1">Choose a video format</h1>
-    <a style="float: left; margin-left: 15%; margin-top: 25px;" href="">Skip</a>
+    <a style="float: left; margin-left: 15%; margin-top: 25px;" href="index.html">Skip</a>
 </div>
 
 <h2 style="clear: both;"><img id="fbicon" src="https://image.flaticon.com/icons/png/512/124/124010.png" alt=""> Facebook</h2>
@@ -153,8 +182,18 @@
     
 
 
-    <script src="lumen53logpage.js">
+    <script src="./Js/lumen53logpage.js"></script>
+    <script>
+        let url2 = new URL(window.location.href)
+        let params2 = new URLSearchParams(url2.search)
+        var name = params2.get("name");
+      // document.getElementById("signup-page1-username").textContent = name;
+        document.getElementById("display_me").textContent = name;
 
+
+
+        
     </script>
+
 </body>
 </html>

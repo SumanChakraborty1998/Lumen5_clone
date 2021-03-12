@@ -98,8 +98,8 @@
               starting point.
             </p>
           </div>
-          <div>
-            <a href="">skip</a>
+          <div class="a">
+            <span  onclick="myDashboard()" id="skip_btn" >skip</span>
           </div>
         </div>
         <!-- --------------------------------- -->
@@ -325,5 +325,22 @@
     <script src="Js/afterloginnav.js"></script>
     <script src="Js/signup_part2.js"></script>
     <script src="Js/lumen53.js"></script>
+
+
+    <script>
+      let url2 = new URL(window.location.href)
+      let params2 = new URLSearchParams(url2.search)
+      var name = params2.get("name");
+      // document.getElementById("signup-page1-username").textContent = name;
+      // document.getElementById("display_me").textContent = name;
+
+      console.log(name);
+
+      function myDashboard()
+      {
+          let url = `lumen53logpage.html?name=${name}`
+          location.assign(url)
+      }
+    </script>
   </body>
 </html>
