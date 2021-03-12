@@ -10,3 +10,11 @@ function user(){
 
     user.appendChild(span1)
 }
+
+
+document.querySelector("#logindetails").addEventListener("click", creatediv)
+function creatediv(){
+    console.log("deepk")
+    let div=document.querySelector("#logout")
+    div.classList.toggle("hidee")
+}

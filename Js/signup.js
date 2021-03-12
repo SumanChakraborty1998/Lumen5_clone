@@ -46,7 +46,8 @@ let validateMyData = () => {
                     storeData(name, mail, pass);
 
                     setTimeout(function(){
-                        location.assign("login.html");
+                        let url = `after_login_1.html?name=${name}`
+                        location.assign(url)
                     }, 2000)
                 }
             }
