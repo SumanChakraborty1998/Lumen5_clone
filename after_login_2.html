@@ -10,6 +10,20 @@
       function preventBack() { window.history.forward(); }
       setTimeout("preventBack()", 0);
       window.onunload = function () { null };
+
+
+
+      let logoutMe = function()
+      {
+          let response = confirm("Want to logout ?")
+
+          if(response)
+              location.assign("index.html");
+          
+              // console.log("hii");
+
+
+      }
     </script>
 
 
@@ -19,6 +33,7 @@
     />
     <link rel="stylesheet" href="Css/signup_part2.css" />
     <link rel="stylesheet" href="Css/afterloginnav.css" />
+    <link rel="stylesheet" href="./Css/lumen53.css">
   </head>
   <body>
     <div id="signup-page1">
@@ -46,15 +61,26 @@
             </button>
             <input type="text" placeholder="Search your Videos" />
           </div>
-          <button id="upgradebtn" style="outline:none; cursor:pointer">Upgrade</button>
+          <button id="upgradebtn">Upgrade</button>
           <div id="logindetails">
             <img
               class="userimg"
               src="https://static.thenounproject.com/png/99567-200.png"
               alt="userimg"
-              onclick="logoutMe()"
             />
-            <span id = "display_me"></span>
+            <span id="display_me"></span>
+          </div>
+          <div id="logout" class="logout hidee">
+            <p>My videos</p>
+            <p>My Channel</p>
+            <p>Workspace</p>
+            <p>Team members</p>
+            <p>account settings</p>
+            <p>Help centre</p>
+            <!-- <div style="border-top: 1px solid rgba(0, 0, 0, 0.466)">
+              <p id="logoutp"><a href="./index.html"></a> Logout</p>
+            </div> -->
+            <p onclick="logoutMe()">Logout</p>
           </div>
         </div>
       </div>
@@ -224,36 +250,7 @@
                 src="https://storage.googleapis.com/lumen5-site-images/Prev_Fresh_2_v2.mp4"
               ></video>
             </div>
-            <!-- <div>
-              <video
-                poster="https://storage.googleapis.com/lumen5-site-images/Preview_Smart.png"
-                src="https://storage.googleapis.com/lumen5-site-images/Prev_Smart_2_v2.mp4"
-              ></video>
-            </div>
-            <div>
-              <video
-                poster="https://storage.googleapis.com/lumen5-site-images/Preview_Focus.png"
-                src="https://storage.googleapis.com/lumen5-site-images/Prev_Circle_mask_v2.mp4"
-              ></video>
-            </div>
-            <div>
-              <video
-                poster="https://storage.googleapis.com/lumen5-site-images/Preview_Lively.png"
-                src="https://storage.googleapis.com/lumen5-site-images/Prev_Circle_text_box_v2.mp4"
-              ></video>
-            </div>
-            <div>
-              <video
-                poster="https://storage.googleapis.com/lumen5-site-images/Preview_Refined_v2.png"
-                src="https://storage.googleapis.com/lumen5-site-images/Prev_Underline_bar_v2.mp4"
-              ></video>
-            </div>
-            <div>
-              <video
-                poster="https://storage.googleapis.com/lumen5-site-images/Preview_Regal.png"
-                src="https://storage.googleapis.com/lumen5-site-images/Prev_Regal_v2.mp4"
-              ></video>
-            </div> -->
+            
           </div>
         </div>
         <!-- --------------------------------- -->
@@ -327,5 +324,6 @@
     </div>
     <script src="Js/afterloginnav.js"></script>
     <script src="Js/signup_part2.js"></script>
+    <script src="Js/lumen53.js"></script>
   </body>
 </html>

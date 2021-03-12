@@ -9,6 +9,7 @@ var name = params.get("name");
 document.getElementById("signup-page1-username").textContent = name;
 document.getElementById("display_me").textContent = name;
 
+console.log(name);
 
 function myDashboard()
 {
@@ -17,14 +18,15 @@ function myDashboard()
 }
 
 
-let logoutMe = function()
-{
-    let response = confirm("Want to logout ?")
+// let logoutMe = function()
+// {
+//     let response = confirm("Want to logout ?")
 
-    if(response)
-        location.assign("index.html");
+//     if(response)
+//         location.assign("index.html");
     
+//         console.log("hii");
 
 
-}
+// }
 
