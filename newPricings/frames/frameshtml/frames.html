@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../frameshtml/frames.css" />
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div class="afterNav">
+        <div>
+            <img class="logo" src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png"
+                alt="lumen5">
+            <img class="menu" src="https://image.flaticon.com/icons/png/128/545/545705.png" alt="">
+        </div>
+        <div class="subdiv">
+            <div class="search">
+                <button><img id="searchbtn" src="https://image.flaticon.com/icons/png/128/709/709592.png"
+                        alt="search"></button>
+                <input type="text" placeholder="Search your Videos">
+            </div>
+            <button id="upgradebtn">Upgrade</button>
+            <div id="logindetails">
+                <img class="userimg" src="https://static.thenounproject.com/png/99567-200.png" alt="userimg">
+                    
+            </div>
+            <div id="logout" class="logout hidee">
+                <p> My videos</p>
+                <p>My Channel</p>
+                <p>Workspace</p>
+                <p>Team members</p>
+                <p>account settings</p>
+                <p>Help centre</p>
+                <div style="border-top: 1px solid rgba(0, 0, 0, 0.466);">
+                    <p id="logoutp"><a href="./index.html"></a> Logout</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <div id="storyLogSidebar">
+            <div class="logsidebar">
+                <ul class="fa-ul">
+                    <li><i style="color: blue;" class="material-icons">archive</i></li>
+                    <p style="color: blue;"> story </p>
+                    <li><i class="fa fa-music" aria-hidden="true"></i></li>
+                    <p> media </p>
+                    <li> <i class="fa fa-telegram" aria-hidden="true"></i></li>
+                    <p> telegram </p>
+                    <li><i class="material-icons">event_available</i></li>
+                    <p> event</p>
+                    <li><i class="material-icons">content_cut</i></li>
+                    <p>content </p>
+                </ul>
+            </div>
+            <div class="logsidebar">
+                <div class="logsidebarImport">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" class="logsidebarImportUrl" placeholder="  url to your blog/Article" />
+                    <input type="button" class="logsidebarImportBtn" value="import"  />
+                </div>
+                <hr>
+                <div class="loginWelcome">
+                    <input type="text" placeholder="Write here something .......">
+                    <p disabled> Welcome to Lumen5
+
+                        Lumen5 can help you turn your written content into a video. Simply copy + paste your text here
+                        or copy a URL into the box above.
+                        <br>
+                        Looking for media? Explore our Media Library to the left or upload your own.
+                        <br>
+                        Want to build your video scene by scene? Click the plus button (+) on the right to create your
+                        first one.
+                        <br>
+                        Want to build your video scene by scene? Click the plus button (+) on the right to create your
+                        first one.
+                    </p>
+
+                </div>
+                <div id="logsidebarConvert">
+                    <p>Lumen5 can help you turn your written content your </p>
+                    <button id="converterBtn"> convert video</button>
+                </div>
+
+            </div>
+            <div id="logsidebarRecorder">
+                <i style="position: absolute; margin: 8vh 7vh;z-index: 1;" class="fa fa-microphone"></i>
+                <input type="button" value="record your own voiceover" />
+                <div id="logsidebarVoice">
+                    <div class="logsidebarbtns">
+                        <!-- <button id="btn1" onclick="myFunction()"> preview </button> -->
+                        <button id="myBtn" onclick="myFunction()"><i class='fa fa-caret-right'
+                                style="margin: 10px;"></i>Pause </button>
+                        <button id="myBtn2"><i class="fa fa-dropbox" style="margin: 5px;"></i> add images </button>
+                        <button id="btn3"> ... more options </button>
+                        <p id="pbtn">Improve communication among members</p>
+                    </div>
+                    <div class="logsidebarbtnsFrame">
+                        <video style="width: 75vh;margin: 9vh 0vh;" autoplay muted loop id="myVideo">
+                            <source
+                                src="../../video/Be The Change - Let's Do It _ Communication Skills Motivational Video.mp4"
+                                type="video/mp4">
+                        </video>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+   <script src="../../frames/frameshtml/frames.js"> </script>
+</body>
+
+</html>
