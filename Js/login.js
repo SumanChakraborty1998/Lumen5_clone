@@ -191,7 +191,11 @@ let loginMe = () =>{
 
         if(flag == 1)
         {
-            let url = `after_login.html?name=${user_db[i].name}mail=${user_db[i].mail}password=${user_db[i].password}`;
+            let url = `after_login_1.html?name=${user_db[i].name}`;
+            // let params = new URLSearchParams(url.search);
+            // params.append("mail",`${user_db[i].mail}`);
+            // params.append("password", `${user_db[i].password}`)
+            // mail=${user_db[i].mail}password=${user_db[i].password}`;
             location.assign(url)
         }
         else
