@@ -26,7 +26,7 @@ h1 {
   margin: auto;
   display: flex;
   flex-direction: row;
-  position: relative;
+  /* position: relative; */
   /* gap: 2%; */
 }
 .video-block-col1 {
