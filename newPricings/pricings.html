@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>pricing Tag</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    #pricingContainers {
+        background: #ffffff;
+    }
+
+    #pricingHeaders {
+        font-weight: bold;
+        line-height: 1.36;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-size: 3vh;
+        text-align: center;
+    }
+
+    #pricingheaders {
+        font-weight: normal;
+        letter-spacing: 0.2em;
+    }
+
+    #pricingBill {
+        text-align: center;
+        
+    }
+
+    #pricingBill>input {
+        border: 1px solid white;
+        text-align: center;
+        padding: 7px;
+        border-radius: 20px;
+        color: white;
+        font-size: 20px;
+        background-color: #3d434f;
+        outline: none;
+    }
+
+    #pricingBill>input:hover {
+        color: white;
+        background-color: grey;
+    }
+
+
+    #pricingPrecommon {
+        display: flex;
+        border-radius: 32px;
+        margin: 12px;
+    }
+
+    .pricingPremium {
+        
+        /* color: #75787c; */
+        /* padding: 3vh; */
+        height: 45vh;
+        width: 232px;
+        border: 1px solid #DDDEE6;
+        border-radius: 14px;
+        padding: 22px;
+        margin: 22px;
+    }
+
+    .pricingPremiumpadding {
+        padding-bottom: 22px;
+        color: #000000;
+
+        font-family: "Poppins", sans-serif;
+    }
+
+    .pricingPremiumpadding>input {
+        border: 1px solid #5846f6;
+        border-radius: 20px;
+        padding: 13px;
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+        color: #5846f6;
+        text-decoration: none;
+
+    }
+
+    .pricingPremiumpadding>input:hover {
+        background-color: blue;
+        color: white;
+        /* font-size: 22px; */
+    }
+
+    #pricingChoice>p {
+        position: absolute;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        background-color: #5846f6;
+        color: white;
+        width: 175px;
+        font-size: 16px;
+        margin: -12px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    .pricingCheckSymbol {
+        display: flex;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: -23px;
+    }
+
+    .pricingCheckSymbol>img {
+        height: 23px;
+        margin: 12px;
+    }
+
+    #priceBusiness {
+        margin: 160px 10px;
+        /* border: 1px solid red; */
+        padding: 12px;
+        color: #24282f;
+    
+    }
+
+    .priceBusinessPlus {
+        text-align: center;
+        padding-top: 59px;
+        font-size: 34px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .priceBusinessPlus>input {
+        text-align: center;
+        margin-top: 12px;
+        outline: none;
+        padding-top: 1px;
+        width: 30vh;
+        font-size: 24px;
+        border: 1px solid #5846f6;
+        border-radius: 15px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .priceBusinessPlus>input:hover {
+        background: dodgerblue;
+        color: white;
+    }
+
+
+    span+input {
+        background: blue;
+        color: white;
+    }
+
+    .pricingCheckWhat {
+        padding: 12px;
+    }
+
+    .pricingCheckWhat>p {
+        font-weight: bold;
+    }
+
+    .pricingCheckSymbol {
+        font-size: 15px;
+    }
+
+    #pricingMembers {
+        background-color: #f5f5f5;
+        display: flex;
+        flex: 1;
+        /* width:100%; */
+    }
+
+    .pricingImages>img {
+        position: relative;
+        width: 14vh;
+        margin-left: 20px;
+        margin-top: -21px;
+        /* padding: 0 12vh; */
+        border: 1px solid white;
+        outline: none;
+        border-radius: 70px;
+    }
+
+    .pricingMememberComment {
+        border: 1px solid white;
+        outline: none;
+        padding: 0 1%;
+        margin: 2% 10vh;
+        background-color: white;
+        width: 125vh;
+        text-align: center;
+        color: #24282f;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    strong {
+        color: #24282f;
+        font-weight: bold;
+    }
+    .savepermonth{
+        color: blue;
+        font-size: 19px;
+    }
+
+    #pricingFrequently{
+        display: flex;
+        flex: 1;
+        justify-content: space-evenly;
+        margin: 42px;
+        color:#24282f;
+        font-family: 'Poppins', sans-serif;
+    }
+    #pricingFrequently > div > h1{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    #pricingFrequently > div > p{
+        font-size: 19px;
+        margin-bottom: 19px;
+        font-family: 'Poppins', sans-serif;
+
+    }
+    #priceChoosePlan{
+        display: flex;
+        padding: 0px 6px;
+        margin: 2vh 100vh;
+        font-size: 22px;
+        font-family: 'Poppins', sans-serif;
+    }
+    #priceChoosePlan > div{
+        padding: 0px 4vh;
+        color: #24282f;
+        font-size: 22px;
+    }
+    #pricingFrequently> div > p:nth-child(1){
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 27px;
+    }
+    #pricingFrequently> div > p:nth-child(3){
+        font-size: 24px;
+        margin-bottom: 27px;
+    }
+    #priceChoosePlan >div> input{
+        border: 1px solid #5d61f6;
+        border-radius: 20px;
+        padding: 13px;
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+        color: #5846f6;
+        text-decoration: none;
+        outline: none;
+    }
+   
+    #priceChoosePlan >div> p+p{
+        color: #24282f;
+        font-size: 16px;
+    }
+    #priceChoosePlan >div> p{
+        color: #24282f;
+        font-size: 29px;
+        font-weight: bold;
+    }
+    #priceChoosePlan >div> input{
+        /* color: #24282f; */
+        font-size: 16px;
+    }
+    #priceChoosePlan >div> input:hover{
+            background: dodgerblue;
+    }
+    .pricingMememberComment  > .pricingImages + div{
+        font-size: 19px;
+    }
+    .pricingMememberComment  > .pricingImages + div > p + p{
+        font-size: 15px;
+    }
+  
+    @media only screen and (max-width: 768px) {
+        body {
+            /* background-color: lightblue; */
+        }
+        #pricingPrecommon{
+            display: flex;
+            flex-direction: column;
+            /* background-color: rebeccapurple; */
+        }
+        .pricingPremium{
+            width: 60vh;
+            /* background: red; */
+            font-size: 12px;
+            height: 320px;
+            padding-bottom: 220px;
+            margin-left: 120px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        body {
+            /* background-color: limegreen; */
+        }
+        #pricingMembers{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 123px;
+        }
+        .pricingMememberComment{
+            width: 80vh;
+            font-size: 12px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        body {
+            /* background-color: limegreen; */
+        }
+        #priceChoosePlan{
+            display: flex;
+            flex-direction: column;
+            margin-left: -20px;
+        }
+        #priceChoosePlan > div > input{
+            width: 220px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        body {
+            /* background-color: limegreen; */
+        }
+        #priceBusiness{
+         /* font-size: 12px; */
+         width: 70vh;
+         margin-top: -32px;
+         margin-left: 122px;
+        }
+        .priceBusinessPlus{
+            font-size: 19px;
+        }
+        .priceBusinessPlus > span {
+            display: block;
+        }
+        
+    }
+    @media only screen and (max-width: 768px) {
+        body {
+            /* background-color: limegreen; */
+        }
+        #pricingFrequently{
+         /* font-size: 12px; */
+          width: 60vh;
+          display: flex;
+          flex-direction: column;
+        }
+    }
+
+    
+</style>
+
+
+<body>
+    <div id="pricingContainers">
+        <div id="pricingHeaders">
+            <p id="pricingheaders"> pricing </p>
+            <h1> Plans for your video content <br> creation strategy </h1>
+        </div>
+
+        <!-- price button -->
+        <div id="pricingBill">
+            <input type="button" id="pricemontly" value="Bill monthly" />
+            <input type="button" id="priceYearly" value="Bill yearly" />
+
+        </div>
+        <!--  price descrip 1 -->
+        <div id="pricingPrecommon">
+            <div class="pricingPremium">
+                <div class="pricingPremiumpadding">
+                    <h1>community</h1>
+                    <p>for casual video individual <br>enthautic</p>
+                </div>
+                <div class="pricingPremiumpadding">
+                    <h1>$<span id="priceValue20"> 0 </span>usd</h1>
+                    <p>forever free</p>
+                    <p class="saveSomepercent"></p>
+                    <p class="savepermonth"></p>
+
+                </div>
+                <div class="pricingPremiumpadding">
+                    <input type="button" value="Try it free" />
+                </div>
+                <div class="pricingCheckWhat">
+                    <p> what includes </p>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p>ck3 videos per month </p>
+                    </div>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p>checkContains Lumen5 watermark </p>
+                    </div>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p>check720p video resolution </p>
+                    </div>
+                </div>
+            </div>
+            <!-- price descrip 2  -->
+            <div class="pricingPremium">
+                <div class="pricingPremiumpadding">
+                    <h1>Creator</h1>
+                    <p>For individual content <br>creators</p>
+                </div>
+                <div class="pricingPremiumpadding">
+                    <h1>$<span id="priceValue11">11 </span>usd</h1>
+                    <p class="savepermonth">per month</p>
+                    <p class="saveSomepercent"></p>
+                </div>
+                <div class="pricingPremiumpadding">
+                    <input type="button" value="Try it free" />
+                </div>
+                <div class="pricingCheckWhat">
+                    <p> Everything in Free, plus: </p>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p>10 videos per month </p>
+                    </div>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p>No Lumen5 branding </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- price descr 3 -->
+            <div class="pricingPremium">
+                <div class="pricingPremiumpadding">
+                    <h1>Premium</h1>
+                    <p>For professional video <br>storytellers</p>
+                </div>
+                <div class="pricingPremiumpadding">
+                    <h1>$<span id="priceValue89">89 </span>usd</h1>
+                    <p class="savepermonth">per month</p>
+                    <p class="saveSomepercent"></p>
+                </div>
+                <div class="pricingPremiumpadding">
+                    <input type="button" value="Try it free" />
+                </div>
+                <div class="pricingCheckWhat">
+                    <p> Everything in Starter, plus: </p>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p>15 videos per month </p>
+                    </div>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p> check15M stock photos & videos </p>
+                    </div>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p>checkCustom colors & styles </p>
+                    </div>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p>check1080p video resolution </p>
+                    </div>
+                </div>
+            </div>  
+
+            <!--  price descrip 4 -->
+            <div class="pricingPremium">
+                <div id="pricingChoice">
+                    <p> POPULAR CHOICE </p>
+                </div>
+                <div class="pricingPremiumpadding">
+                    <h1>Business</h1>
+                    <p>For brands focused on reach and growth</p>
+                </div>
+                <div class="pricingPremiumpadding">
+                    <h1>$<span id="priceValue199">199 </span>usd</h1>
+                    <p class="savepermonth">per month</p>
+                    <p class="saveSomepercent"></p>
+                </div>
+                <div class="pricingPremiumpadding">
+                    <input type="button" value="Try it free" />
+                </div>
+                <!-- here id is same as upper -->
+                <div class="pricingCheckWhat">
+                    <p> Everything in Premium, plus: </p>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p>check20 videos per month</p>
+                    </div>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p>checkUpload watermark & font</p>
+                    </div>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p>checkMultiple brand profiles</p>
+                    </div>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p>checkMultiple brand profiles</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- price descrip 5 -->
+            <div class="pricingPremium">
+                <div class="pricingPremiumpadding">
+                    <h1>Enterprise</h1>
+                    <p>For large-scale video of videos</p>
+                </div>
+                <div class="pricingPremiumpadding">
+                    <h1><span>$ </span>custom</h1>
+                    <p></p>
+                    <br /><br />
+                    <!-- <p>free video</p> -->
+                </div>
+                <div class="pricingPremiumpadding">
+                    <input type="button" value="Try it free" />
+                </div>
+                <div class="pricingCheckWhat">
+                    <p> Everything in Business, plus:</p>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p>Custom number of videos</p>
+                    </div>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p>checkShutterstock libraries</p>
+                    </div>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p>checkTeams & permissions</p>
+                    </div>
+                    <div class="pricingCheckSymbol">
+                        <img src="./images/check.png" alt="#" />
+                        <p>checkTraining & onboarding</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end price descript  -->
+        <div id="priceBusiness">
+            <div class="priceBusinessPlus">
+                <p> We make video simple for 700,000+ businesses </p>
+            </div>
+            <div class="priceBusinessPlus">
+                <input type="button" value="compare plans" />
+                <span>or </span>
+                <input type="button" value="try it free" />
+            </div>
+        </div>
+
+        <!-- pricingMembers -->
+        <div id="pricingMembers">
+            <!-- 1 comment member -->
+            <div class="pricingMememberComment">
+                <div class="pricingImages">
+                    <img src="./images/comment-darren.png">
+                </div>
+                <div>
+                    <p> "A member from our ProBlogger group created a video using Lumen5 and published it on
+                        Facebook.
+                        In 24 hours the video got <strong>300,000 views </strong>, just using this little tool." </p>
+                    <p> DARREN ROWSE </p>
+                </div>
+            </div>
+            <!-- 2 comment member -->
+            <div class="pricingMememberComment">
+                <div class="pricingImages">
+                    <img src="./images/comment-nicholas.png">
+                </div>
+                <div>
+                    <p> "By using Lumen5, we increased our Facebook engagements by 448%, and boosted our reach
+                        dramatically.
+                        Our page grew from 5,000 to <strong>23,000 likes</strong> within a week!"</p>
+                    <p> NICHOLAS YANG </p>
+                </div>
+            </div>
+            <!-- 3 comment   -->
+            <div class="pricingMememberComment">
+                <div class="pricingImages">
+                    <img src="./images/comment-tova.png">
+                </div>
+                <div>
+                    <p> "My first video already got over <strong>650,000 views</strong> on my facebook page.
+                        It is an amazing program and I’m really impressed! It made converting a blog post into a video
+                        so easy. </p>
+                    <p> TOVA LEIGH </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- 1 pricingMembers end -->
+
+        <div id="pricingMembers">
+
+            <!-- 1 comment member -->
+            <div class="pricingMememberComment">
+                <div class="pricingImages">
+                    <img src="./images/comment-lauren.png">
+                </div>
+                <div class="pricingImages">
+                    <p> "I created a video using an older blog post and it's been a huge hit! Great
+                        way to freshen up and share things again— <strong>170,000 views </strong>and climbing!"
+                    </p>
+                    <p> LAUREN CASPER </p>
+                </div>
+            </div>
+            <!-- 2 comment member -->
+            <div class="pricingMememberComment">
+                <div class="pricingImages">
+                    <img src="./images/comment-steve.png">
+                </div>
+                <div>
+                    <p> "Lumen5 is fantastic! I made a video and now it has gone viral!
+                        It has <strong>22,000</strong> views from a reach of 65,000. No advertising. No promotion."
+                    </p>
+                    <p> STEVE LAST </p>
+                </div>
+            </div>
+            <!-- 3 comment   -->
+            <div class="pricingMememberComment">
+                <div class="pricingImages">
+                    <img src="./images/comment-kaylene.png">
+                </div>
+                <div>
+                    <p>"My Lumen5 video went viral with over<strong>3 million reach</strong> and it grew my page from
+                        1500 to 5000 likes! I’m making these for all my top posts."</p>
+                    <p> KAYLENE GEORGE </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- 2 pricingMembers end -->
+        <!-- frequently asked questions  -->
+        <h1 style="text-align: center;"> Choose the plan that's right for you </h1>
+        <div id="priceChoosePlan"> 
+            <div> 
+                <p> Creator </p>
+                <p>$15USD/month </p>
+                <input type="button" value="Try it free  "/>
+            </div>
+            <div> 	
+                
+                <p> Premium </p>
+                <p>$79USD/month</p>
+                <input type="button" value="Try it free"/>
+            </div>
+            <div> 
+                <p>   Business </p>
+                <p>$199USD/month </p>
+                <input type="button" value="Try it free  "/>
+            </div>
+            <div> 
+                <p>   Enterprise </p>
+                <p> $199USD/month </p>
+                <input type="button" value="Learn More"/>
+            </div>
+       </div>
+       
+       <hr style="height:2px;background-color: #f5f5f5;">
+
+        <!--  -->
+
+       <!--  -->
+        <h1 style="text-align: center;"> A few frequently asked questions </h1>
+        <div id="pricingFrequently">
+            <div>
+                <p>What if I only need Lumen5 for a set amount of time?</p>
+                <p>That's fine! You can cancel your account anytime. </p>
+                <p> Do you have a non-profit discount?</p>
+                <p>We do. Contact us for more information.</p>
+            </div>
+            <div>
+                <p>What happens to my videos if I cancel?</p>
+                <p>All the videos you create are yours to keep forever and ever.</p>
+                <p> How do I pay for my plan? </p>
+                <p>You can pay with Visa, Mastercard, and American Express. <br>All prices are in USD. Invoiced billing is available on the Team plan and above.</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- full end -->
+    <script src="script.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        #storyLogSidebar{
+            margin-top: 12px;
+            display: flex;
+            flex: 1;
+        }
+        .fa-ul{
+            color: blueviolet;
+            border-right: 1px solid grey;
+            padding: 12px 12px;
+            height: 22vh;
+        }
+        .logsidebar{
+            margin: 7px 1px;
+            font-size: 21px;
+            border: 1px solid grey;
+        }
+        .logsidebarImport{
+            display: flex;
+            flex: 1;
+            margin: 19px;
+            width: 69vh;
+        }
+        .logsidebarImport > i{
+            position: absolute;
+            margin-left: 10px;
+            color: grey;
+
+        }
+        .logsidebarImport > .logsidebarImportUrl {
+            border-top: 1px solid transparent;
+            border-right: 1px solid transparent;
+            border-left: 1px solid transparent;
+            border-bottom: 1px solid grey;
+            width: 196vh;
+            margin-left: 3vh;
+            padding: 10px;
+            font-size: 25px;
+            text-align: center;
+            letter-spacing: 0.1em;
+        }
+        .logsidebarImport > .logsidebarImportBtn{
+            border-radius: 120px;
+            width: 90vh;
+            background-color: #5d61f6;
+            color: white;
+            font-size: 15px;
+        }
+        .loginWelcome{
+            height: 320px;
+            margin: 2px 22px;
+            width: 64vh;
+            padding: 120px 10px;
+        } 
+        .loginWelcome > input{
+            border: 1px solid transparent;
+            outline: none;
+        } 
+        .loginWelcome >  p{
+            color: grey;
+        } 
+        #logsidebarConvert{
+            display: flex;
+            height: 33px;
+            /* border: 1px solid red; */
+            padding: 20px;
+        }
+        #logsidebarConvert > p{
+            font-size: 15px;
+            margin-left: 40px;
+        }
+        #logsidebarConvert > p + button{
+            background-color: #5d61f6;
+            color: white;
+            border-radius: 20px;
+            margin-left: 12px;
+            padding-left: 22px;
+            height: 6vh;
+            width: 16vh;
+        }
+        #logsidebarRecorder{
+            margin:39vh 0px;
+            border: 1px solid red;
+        }
+        #logsidebarVoice{
+            background: #f0f0f4;
+            border: 1px solid green;
+            margin: 1px 18px;
+
+            
+        }
+        #logsidebarRecorder > input{
+            position: absolute;
+            margin: 20px 0px;
+        }
+        iframe{
+            width: 60vh;
+            height:32vh;
+            margin: 0px 4px;
+            /* overflow: scroll; */
+        }
+        .logsidebarbtns{
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            margin: 0vh 10vh;
+            position:absolute;
+            top:50%;
+            width:100%;text-align:center;
+            /* margin:0 auto; */
+            color: white;font: bold 20px;
+        }
+        .logsidebarbtns > button{
+            position: relative;
+            width: 120px;
+            margin: 0px 40vh;
+        }
+        #logsidebarbtnsFrame{
+            /* height: 20vh; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <div id="storyLogSidebar">
+            <div class="logsidebar"> 
+                <ul class="fa-ul">
+                    <li><i class="fa fa-music" aria-hidden="true"></i></li>
+                    <p> story </p>
+                    <li><i class="fa fa-music" aria-hidden="true"></i></li>
+                    <p> media </p>
+                   <li> <i class="fa fa-telegram" aria-hidden="true"></i></li>
+                   <p> music </p>
+                   <li>  <i class="fa fa-quora" aria-hidden="true"></i></li>
+                   <p> format</p>
+                   <li>  <i class="fa fa-quora" aria-hidden="true"></i></li>  
+                </ul>
+            </div>
+            <div class="logsidebar">
+                <div class="logsidebarImport"> 
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" class="logsidebarImportUrl" placeholder="url to your blog / Article"/>
+                    <input type="button" class="logsidebarImportBtn" value="he"/>
+                </div>
+                <hr> 
+                <div class="loginWelcome">
+                    <input type="text" placeholder="welcomes">
+                    <p disabled>  welcome to Lumen 5 
+                        Lumen5 can help you turn your written content into video<br>
+                        Looking to media
+                    </p>
+                </div>
+
+                <div id="logsidebarConvert"> 
+                    <p>Lumen5 can help you turn your written content into video Looking </p>
+                    <button> convert video</button>
+                </div>
+            </div>
+            <div id="logsidebarRecorder"> 
+                <input type="button" value="record your own voiceover"/>
+                <div id="logsidebarVoice"> 
+                    <div class="logsidebarbtns">
+                        <button id="btn1"> preview </button>
+                        <button id="btn2"> seconds </button>
+                        <button id="btn3"> ... more options </button>
+                    </div>
+                    <div class="logsidebarbtnsFrame">
+                        <iframe src="./video/Relaxing Walk in the Rain, Umbrella and Nature Sounds for Sleep and Relaxation _ 4k ASMR.mp4" type="video/mp4" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div id="previewDetails"></div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var count = 0
+        function setPreview(event){
+            event.preventDefault();
+            var setTimer = setTimeout(function(){
+                var previewDetails = document.getElementById("previewDetails");
+                var div = document.createElement("div");
+                var pelements = document.createElement("p");
+                pelements.textContent = "the elements of first";
+                pelements.style.color = "red"
+                div.append(pelements);
+                previewDetails.append(div);
+            },3000)
+
+        }
+        window.addEventListener("load",function(){
+            var btn1 = document.getElementById("btn1").addEventListener("click",setPreview)
+        });
+    </script>
+</body>
+</html>

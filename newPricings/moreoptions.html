@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #body {
+            color: red;
+            background: grey;
+        }
+
+        .blur {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* background: rgba(0, 0, 0, 0.5); */
+            background-color: aqua;
+            display: none;
+        }
+
+        #sh {
+            position: absolute;
+            display: none;
+            top: 50px;
+            left: 50px;
+            bottom: 50px;
+            right: 50px;
+            background: rgba(255, 0, 0, 0.5);
+            background-color: #ffffff;
+        }
+
+        #sh > p {
+            font-size: 29px;
+            color: #24282f;
+            margin: 12px;
+            padding: 12px;
+         }
+         /* #sh > button {
+           text-align: center;
+           margin: 5px 150px; 
+         } */
+        #close{
+            margin: 0px 190vh;
+            border-radius: 6px;
+            border: 1px solid transparent;
+            width: 30px;
+        }
+        #CloseBtnModal{
+            margin: 12px 75vh;
+            display: flex;
+        }
+        #CloseBtnModal > button{
+            border-right: 1px solid transparent;
+            border-left: 1px solid transparent;
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid blue;
+            margin: 12px;
+            background-color: #ffffff;
+            display: flex;
+            padding: 5px 12px;
+            font-size: 22px;
+            color: blue;
+            width: auto;
+        }
+        #CloseBtnModal > button:hover{
+            color: grey;
+        }
+
+        #CloseBtnApply{
+            margin: 33px 108vh;
+            padding: 5px;
+            display: flex;
+            padding: 12px;
+        }
+
+        #CloseBtnApply > button{
+            height: 65px;
+            color: blue;
+            margin: 0px 17px;
+            width: 226px;
+            border-radius: 15px;
+            font-size: 15px;
+        }
+    </style>
+
+    <div id='body'>
+        <button>Click Here</button>
+    </div>
+    <div class="blur">
+        <div> 
+        </div>
+    </div>
+    <div id='sh'>
+        <button id="close">X</button>
+        <hr>
+        <p> Scene options</p>
+        <hr>
+        <div id="CloseBtnModal"> 
+            <button> ...photo</button>
+            <button> trim</button>
+        </div>
+        <hr>
+        <div id="CloseBtnVideo">
+            <video style="width: 162vh;height: 400px;" autoplay muted loop id="myVideo">
+                <source src="./video/videoplayback (4).mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+             </div>
+        <div id="CloseBtnApply">
+            <button> cancel </button>
+            <button> Apply </button>
+               
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            var pup = document.getElementsByTagName('button')[0];
+            pup.onclick = function () {
+                document.getElementById('sh').style.display = "block";
+                document.getElementsByClassName('blur')[0].style.display = "block";
+            };
+            var close = document.getElementById('close');
+            close.onclick = function () {
+                document.getElementById('sh').style.display = "none";
+                document.getElementsByClassName('blur')[0].style.display = "none";
+            };
+        };
+    </script>
+</body>
+
+</html>
