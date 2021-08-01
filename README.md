@@ -1,11 +1,13 @@
 ### Title of Project :
-lumen5.com
+Cloning of Lumen5 website. We are a team of 4. We have tried to create a clone of a well known video crating website call Lumen5.com. For more details <a href="https://sumanchakraborty1998.github.io/lumen5.github.io/">Click here</a>
 
 ### Project-Repository name:
 Lumen5_clone
 
 ### Introduction:
-Our project is about developing the clone of the "lumen5.com". Lumen 5 is the American based video editing app 
+Our project is about developing the clone of the "lumen5.com". Lumen 5 is the American based video editing app
+
+<a href="#"><img width="100%" height="auto" src="./Images/Home_Page.png" height="175px"/></a>
 
 ### Technology used :
 Only HTML, CSS, Javascript, localstorage are used to accomplish the project. Advance Js and DOM is also used to make it interactive.
